@@ -119,12 +119,55 @@ function Hero() {
     What will you see the moment you check-in?
   </h1>
   <h3 className='about-qa-rep text-bubble right-triangle'>
-  Expect a warm and inviting atmosphere, with our friendly staff you'll experience a seamless process from check-in to your eye examination, with a focus on your comfort and well-being throughout your visit
+  Expect a warm and inviting atmosphere, with our friendly staff you'll experience a seamless process from check-in to your eye examination, with a focus on your comfort and well-being
   </h3>
           </div>
           
 
         </div>
+      </section>
+
+      <section className='contact-us'>
+      
+        <address className="contact-text">
+          <h1 className='cta-contact'>Make a Appointment with an Expert</h1>
+          <div className="c-info">
+              <h3 className='call-contact' href="tel:+27178263435">(+27) 17 826 3435</h3>
+          <h3 className='call-contact' href="sylka@interkom.co.za">Book</h3>
+          </div>
+        
+        </address>
+        <div className="contact-image-cnt">
+          <img className='contact-image' src="../assets/pexels-photo-5715892.webp" alt="" srcset="" />
+
+        </div>
+      
+
+      </section>
+      <section className='footer'>
+        <div ><h1 className='logo'>
+          Sylka Mölhe</h1>
+          <p className='ocu-optometrist'>optomtree</p><p className='ocu-optometrist'>optometrist</p></div>
+        
+        <div className="map">
+          <iframe
+      title="Google Map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.775158543744!2d30.801239174004895!3d-27.005661376591878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eeee5a9be8b9cb7%3A0xa277efcd410b0890!2sSykla%20M%C3%B6hle!5e0!3m2!1sen!2sza!4v1705502982045!5m2!1sen!2sza"
+      width="400"
+      height="200"
+      style={{ border: '2px solid #213547', borderRadius:"22px" }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+        </div>
+        <adress className="foot-contact">
+          <h3 className='call-whatsapp'> (+27) 82 775 1649</h3>
+        <h3 className='foot-call-contact'>(+27) 17 826 3435</h3>
+        <h3>
+3 Alfa Bldg, 11a Retief St Piet Retief 2380</h3>
+
+        </adress>
       </section>
       </section>
      

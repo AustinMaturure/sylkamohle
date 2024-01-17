@@ -115,6 +115,8 @@
   background-color: rgba(255, 255, 255, .15);   
   z-index: 2;
   overflow: hidden; 
+ border-top-right-radius: 22px;
+ border-top-left-radius: 22px;
 }
 
 .offer::before {
@@ -204,15 +206,16 @@ text-align: left;
   position: relative;
   min-height: 100vh;
   background-color: rgba(255, 255, 255, 0.863);
-  border-top-right-radius: 22px;
-  border-top-left-radius: 22px;
+border-radius: 22px;
   color: #388AD2;
+ 
 
 }
 .about-div{
   display: grid;
   grid-template-columns: 40% 60%;
   margin-top: 2rem;
+  
 }
 .about-image{
   height: 30rem;
@@ -239,6 +242,7 @@ text-align: left;
   flex-direction: column;
   align-items: baseline;
   padding: 4px;
+  margin-bottom: 40px;
   gap: 4px;
 }
 .about-qa-head{
@@ -249,7 +253,7 @@ text-align: left;
   max-width: 50%;
   margin-left: 10rem;
   overflow: visible;
-  box-shadow:  5px 5px 6px #2135479e,
+  box-shadow:  2px 2px 6px #2135479e,
                -5px -5px 6px #e7e7e7;
   font-weight: bold;
   justify-self: right;
@@ -260,8 +264,7 @@ text-align: left;
 .about-qa-rep{
   background-color:rgba(255, 255, 255, 0.934) ;
   color: #213547e3;
-  box-shadow:  5px 5px 6px #ffffff,
-               -5px -5px 6px #f1f1f1;
+ 
   line-height: 1.3em;
   border-radius: 22px;
   padding: 12px;
@@ -271,8 +274,8 @@ text-align: left;
 }
 
 @keyframes slide{
-  0% {transform: translateY(100%);}
-  100% {transform: translateY(0%);}
+  0% {transform: scale(0%);}
+  100% {transform: scale(100%);}
 }
 
 /* Common styles for text bubbles */
@@ -325,4 +328,85 @@ text-align: left;
   transform: scaleX(-1); /* Adjust color as needed */
 }
 
+.contact-us {
+  height: 100vh;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 40px;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+.contact-image-ctn{
+  align-self: center;
+}
+.contact-image{
+  max-width: 100%;
+  border-radius: 22px;
+  align-self: center;
+  box-shadow:  2px 2px 6px #d9d9d9,
+  -2px -2px 6px #e7e7e7;
+ 
+}
 
+.c-info{
+  display: flex;
+}
+
+.contact-text{
+  background-color: #213547e3;
+  min-width: 130%;position: relative;
+  z-index: 3;
+  font-family: 'satoshi';
+  border-radius: 22px;
+  
+}
+.cta-contact{
+  text-align: left;
+  padding: 20px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.call-contact{
+  background-color: rgb(255, 255, 255);
+  width: 12rem;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 22px;
+}
+
+.footer{
+  min-height: 16rem;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  font-family: 'satoshi';
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+  border-top-right-radius: 22px;
+  border-top-left-radius: 22px;
+}
+
+.foot-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.foot-contact h3{
+  margin: 0px;
+}
+.logo{
+  font-weight: 900;
+  margin: 0px;
+  font-size: 2rem;
+}
+
+.ocu-optometrist{
+  margin: 0px;
+}

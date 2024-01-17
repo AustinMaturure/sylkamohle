@@ -4,7 +4,7 @@ export default function Navbar(){
     return(
         <div>
   <nav className="navbar"> 
-    <h2 className="logo-header">SYLKA MOHLE</h2>
+    <h2 className="logo-header">SYLKA MöHLE</h2>
    
     <ul className="nav-links">
       <li><a href="#services">Services</a></li>

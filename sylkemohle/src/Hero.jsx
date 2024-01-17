@@ -1,25 +1,18 @@
 
 import './Hero.css'
 import '../assets/sky.png'
-import React, { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
+import React from 'react';
+import useElementInView from './ElementInView';
 
 function Hero() {
   
-    const [ref, inView] = useInView({
-      triggerOnce: true, // Ensures the animation only happens once
-      threshold: 0.5,}) // Adjust as needed, 0.5 means half of the element is in the viewport
-   
+  const textBubbleRef = useElementInView('.text-bubble');
+
   
-    useEffect(() => {
-      if (inView) {
-        const elements = document.querySelectorAll('.text-bubble');
-        elements.forEach((element) => {
-          element.style.opacity = 1; // Make the element visible
-          element.style.animationPlayState = 'running'; // Start the animation
-        });
-      }
-    }, [inView]);
+  const serviceCardRef = useElementInView('.service-card');
+
+  const contactRef = useElementInView('.contact-text');
+  const contactImageRef = useElementInView('.contact-image');
 
   return (
     <>
@@ -37,8 +30,8 @@ function Hero() {
        
          <div className="offer-content">
          <h1 className='wwo-header'>OUR SERVICES</h1>
-<div className="grid-1">
-  <div className='service-card' id='card-1'>
+<div className="grid-1" ref={serviceCardRef}>
+  <div className='service-card' id='card-1' >
     <h2 className='service-title'>Comprehensive Eye Exams</h2>
     <p className='service-price'>R499.00</p>
     <p className='service-description'>
@@ -103,10 +96,10 @@ function Hero() {
             <img src="../assets/pexels-phot.webp" alt="" srcset="" />
           </div>
           <div className="about-text" >
-          <h1 className='about-qa-head text-bubble left-triangle' ref={ref}>
+          <h1 className='about-qa-head text-bubble left-triangle' >
     Why do we love helping you see the things you love?
   </h1>
-  <h3 className='about-qa-rep text-bubble right-triangle' >
+  <h3 className='about-qa-rep text-bubble right-triangle' ref={textBubbleRef}>
     Our passion lies in enhancing your vision for a brighter, more enjoyable life. We take pride in helping you see the things you love, ensuring your journey is clear, comfortable, and plain for you to see
   </h3>
   <h1 className='about-qa-head text-bubble left-triangle'>
@@ -127,13 +120,13 @@ function Hero() {
         </div>
       </section>
 
-      <section className='contact-us'>
+      <section className='contact-us' ref={contactImageRef} >
       
-        <address className="contact-text">
+        <address className="contact-text" ref={contactRef}>
           <h1 className='cta-contact'>Make a Appointment with an Expert</h1>
           <div className="c-info">
               <h3 className='call-contact' href="tel:+27178263435">(+27) 17 826 3435</h3>
-          <h3 className='call-contact' href="sylka@interkom.co.za">Book</h3>
+          <h3 className='book-contact' href="sylka@interkom.co.za">Book</h3>
           </div>
         
         </address>

@@ -203,15 +203,15 @@ text-align: left;
   z-index: 2;
   position: relative;
   min-height: 100vh;
-  background-color: rgb(255, 255, 255, 0.934);
-  border-top-right-radius: 16px;
-  border-top-left-radius: 16px;
+  background-color: rgba(255, 255, 255, 0.863);
+  border-top-right-radius: 22px;
+  border-top-left-radius: 22px;
   color: #388AD2;
 
 }
 .about-div{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   margin-top: 2rem;
 }
 .about-image{
@@ -225,35 +225,104 @@ text-align: left;
   max-height:100%;
   max-width:100%;
   border-radius: 8px;
+  box-shadow:  5px 5px 6px #d9d9d9,
+  -5px -5px 6px #e7e7e7;
 }
 
 #wwo-about {
-  color: rgb(25, 28, 31);
+  color: #213547e3;
   padding: 20px;
 }
 .about-text{
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  padding: 4px;
+  gap: 4px;
 }
 .about-qa-head{
   text-align: center;
   color: rgb(255, 255, 255);
   padding: 20px;
-  border-radius: 26px;
-  
+  border-radius: 40px;
+  max-width: 50%;
+  margin-left: 10rem;
+  overflow: visible;
+  box-shadow:  5px 5px 6px #2135479e,
+               -5px -5px 6px #e7e7e7;
   font-weight: bold;
-  text-transform: uppercase;
-  background-color: #1f1f1f;
+  justify-self: right;
+  background-color: #213547e3;
   font-size: 1rem;
 }
 
 .about-qa-rep{
-  background-color: #388ad2a7;
-  color: rgb(255, 255, 255);
-  box-shadow:  5px 5px 6px #d9d9d9,
-               -5px -5px 6px #e7e7e7;
+  background-color:rgba(255, 255, 255, 0.934) ;
+  color: #213547e3;
+  box-shadow:  5px 5px 6px #ffffff,
+               -5px -5px 6px #f1f1f1;
   line-height: 1.3em;
   border-radius: 22px;
   padding: 12px;
-  margin-right: 10rem;
+  align-self: last baseline;
+  font-family: 'satoshi';
+  font-weight: 700;
 }
+
+@keyframes slide{
+  0% {transform: translateY(100%);}
+  100% {transform: translateY(0%);}
+}
+
+/* Common styles for text bubbles */
+.text-bubble {
+  display: inline-block;
+  max-width: 70%; /* Adjust as needed */
+  margin: 10px;
+  padding: 15px;
+  border-radius: 40px;
+  
+  font-size: 1rem;
+  line-height: 1.4;
+  animation: slide 3s linear;
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 1s ease-in ;
+}
+
+/* Triangle styles for left-pointing bubble */
+.left-triangle {
+  position: relative;
+}
+
+.left-triangle:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 99.5%;
+  margin-top: -10px; /* Half of the triangle's height */
+  border-width: 10px;
+  border-radius: -1rem;
+  border-style: solid;
+  border-color: transparent transparent transparent #213547e3;
+  transform: scaleX(-1); /* Adjust color as needed */
+}
+
+/* Triangle styles for right-pointing bubble */
+.right-triangle {
+  position: relative;
+}
+
+.right-triangle:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -10px; /* Half of the triangle's height */
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent rgb(255, 255, 255) transparent transparent; 
+  transform: scaleX(-1); /* Adjust color as needed */
+}
+
 

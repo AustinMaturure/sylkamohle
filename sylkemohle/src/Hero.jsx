@@ -1,9 +1,25 @@
 
 import './Hero.css'
 import '../assets/sky.png'
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 function Hero() {
   
+    const [ref, inView] = useInView({
+      triggerOnce: true, // Ensures the animation only happens once
+      threshold: 0.5,}) // Adjust as needed, 0.5 means half of the element is in the viewport
+   
+  
+    useEffect(() => {
+      if (inView) {
+        const elements = document.querySelectorAll('.text-bubble');
+        elements.forEach((element) => {
+          element.style.opacity = 1; // Make the element visible
+          element.style.animationPlayState = 'running'; // Start the animation
+        });
+      }
+    }, [inView]);
 
   return (
     <>
@@ -81,20 +97,30 @@ function Hero() {
 </div>
 </div>
  <section className='About-section'>
-        <h1 className='wwo-header' id='wwo-about'>ABOUT US</h1>
+        <h1 className='wwo-header right-triangle' id='wwo-about'>ABOUT US</h1>
         <div className='about-div'>
           <div className="about-image">
             <img src="../assets/pexels-phot.webp" alt="" srcset="" />
           </div>
-          <div className="about-text">
-          <h1 className='about-qa-head'>
-          Why we love helping you see the things you love
-          </h1>
-          <h3 className='about-qa-rep'>
-          "Our passion lies in enhancing your vision for a brighter, more enjoyable life. We take pride in helping you see the things you love, ensuring your journey is clear, comfortable, and uniquely yours."
-          </h3>
-          
-
+          <div className="about-text" >
+          <h1 className='about-qa-head text-bubble left-triangle' ref={ref}>
+    Why do we love helping you see the things you love?
+  </h1>
+  <h3 className='about-qa-rep text-bubble right-triangle' >
+    Our passion lies in enhancing your vision for a brighter, more enjoyable life. We take pride in helping you see the things you love, ensuring your journey is clear, comfortable, and plain for you to see
+  </h3>
+  <h1 className='about-qa-head text-bubble left-triangle'>
+    Why choose us?
+  </h1>
+  <h3 className='about-qa-rep text-bubble right-triangle'>
+  With years of experience, our highly qualified optometrists bring expertise to every examination. We utilize advanced technology, ensuring accurate diagnoses and tailored solutions for your eye health
+  </h3>
+  <h1 className='about-qa-head text-bubble left-triangle'>
+    What will you see the moment you check-in?
+  </h1>
+  <h3 className='about-qa-rep text-bubble right-triangle'>
+  Expect a warm and inviting atmosphere, with our friendly staff you'll experience a seamless process from check-in to your eye examination, with a focus on your comfort and well-being throughout your visit
+  </h3>
           </div>
           
 

@@ -2,6 +2,7 @@
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
+
 const useElementInView = (querySelector) => {
   const [ref, inView] = useInView({
     triggerOnce: true,

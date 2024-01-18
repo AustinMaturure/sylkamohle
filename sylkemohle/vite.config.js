@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['react-intersection-observer'],
+      external: ['node_modules/react-intersection-observer'],
     },
   },
 })

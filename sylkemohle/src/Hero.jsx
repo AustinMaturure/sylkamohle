@@ -1,8 +1,11 @@
 
 import './Hero.css'
-import skyImage from '../assets/sky.png';
+
+import skyImage from '../assets/sky.webp';
 import modelImage from '../assets/model-glass-1.png';
 import pexelsImage from '../assets/pexels-phot.webp';
+import contactImage from '../assets/pexels-photo-5715892.webp';
+
 import React from 'react';
 import useElementInView from './ElementInView';
 
@@ -20,13 +23,13 @@ function Hero() {
 
   return (
     <>
-      <section className="hero" style={{backgroundImage:  `url(${skyImage})`}}>
+      <section className="hero" style={{backgroundImage:  `url(${skyImage})`}} loading="lazy">
         
       <h1 className='tag-line'>YOUR VISION, OUR EXPERTISE</h1>
       <p className='tag'>So you can see more of what's important in life.</p>
       <div className='image-mod-cnt'>
         
-        <img className="image-mod" src={modelImage} alt="" srcset="" />
+        <img className="image-mod" src={modelImage} alt="" srcset="" loading="lazy"/>
       </div>
         
       </section>
@@ -97,7 +100,7 @@ function Hero() {
         <h1 className='wwo-about' id='wwo-about' ref={HeaderARef}>ABOUT US</h1>
         <div className='about-div'>
           <div className="about-image">
-            <img src={pexelsImage} alt="" srcset="" />
+            <img src={pexelsImage} alt="" srcset="" loading="lazy"/>
           </div>
           <div className="about-text" >
           <h1 className='about-qa-head text-bubble left-triangle' >
@@ -135,7 +138,7 @@ function Hero() {
         
         </address>
         <div className="contact-image-cnt">
-          <img className='contact-image' src="../assets/pexels-photo-5715892.webp" alt="" srcset="" />
+          <img className='contact-image' src={contactImage} alt="" srcset="" loading='lazy' />
 
         </div>
       

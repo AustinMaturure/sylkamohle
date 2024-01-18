@@ -10,9 +10,11 @@ function Hero() {
 
   
   const serviceCardRef = useElementInView('.service-card');
-
+  
   const contactRef = useElementInView('.contact-text');
   const contactImageRef = useElementInView('.contact-image');
+  const HeaderRef = useElementInView('.wwo-header');
+  const HeaderARef = useElementInView('.wwo-about');
 
   return (
     <>
@@ -28,8 +30,8 @@ function Hero() {
       </section>
       <section className="offer">
        
-         <div className="offer-content">
-         <h1 className='wwo-header'>OUR SERVICES</h1>
+         <div className="offer-content" id='services'>
+         <h1 className='wwo-header' ref={HeaderRef} >OUR SERVICES</h1>
 <div className="grid-1" ref={serviceCardRef}>
   <div className='service-card' id='card-1' >
     <h2 className='service-title'>Comprehensive Eye Exams</h2>
@@ -71,16 +73,16 @@ function Hero() {
   </div>
 
   <div className='service-card' id='card-5'>
-    <h2 className='service-title'>Vision Therapy</h2>
+    <h2 className='service-title'>Spectacle Frames</h2>
     <p className='service-price'>R50.00</p>
     <p className='service-description'>
-      Providing exercises and activities to improve visual skills.
-      Addressing issues such as eye coordination and focusing problems.
+        With our wide range of well-known brands we ensure you not only see great
+        but look great to others
     </p>
   </div>
 
   <div className='service-card' id='card-6'>
-    <h2 className='service-title'>Vision Therapy</h2>
+    <h2 className='service-title'>Driver's Test</h2>
     <p className='service-price'>R50.00</p>
     <p className='service-description'>
       Providing exercises and activities to improve visual skills.
@@ -89,8 +91,8 @@ function Hero() {
   </div>
 </div>
 </div>
- <section className='About-section'>
-        <h1 className='wwo-header right-triangle' id='wwo-about'>ABOUT US</h1>
+ <section className='About-section' id='about-us'>
+        <h1 className='wwo-about' id='wwo-about' ref={HeaderARef}>ABOUT US</h1>
         <div className='about-div'>
           <div className="about-image">
             <img src="../assets/pexels-phot.webp" alt="" srcset="" />
@@ -120,7 +122,7 @@ function Hero() {
         </div>
       </section>
 
-      <section className='contact-us' ref={contactImageRef} >
+      <section className='contact-us' id='contact-us' ref={contactImageRef} >
       
         <address className="contact-text" ref={contactRef}>
           <h1 className='cta-contact'>Make a Appointment with an Expert</h1>

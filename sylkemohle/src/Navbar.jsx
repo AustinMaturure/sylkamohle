@@ -8,8 +8,8 @@ export default function Navbar(){
    
     <ul className="nav-links">
       <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#about-us">About</a></li>
+      <li><a href="#contact-us">Contact Us</a></li>
     </ul>
     
     <button className="book-btn">BOOK</button>

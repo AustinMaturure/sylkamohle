@@ -13,6 +13,7 @@ const useElementInView = (querySelector) => {
       const elements = document.querySelectorAll(querySelector);
       elements.forEach((element) => {
         element.style.opacity = 1;
+        element.style.filter = 'blur(0px)';
         element.style.animationPlayState = 'running';
       });
     }

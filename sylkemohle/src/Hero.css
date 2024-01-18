@@ -36,6 +36,15 @@
 .nav-links a {
   color: rgb(255, 255, 255);
   text-decoration: none;
+  transition: all 1s;
+  border-radius: 22px;
+  
+  padding: 10px;
+}
+
+.nav-links a:hover{
+  background-color: rgb(255, 255, 255);
+  color: #388AD2;
 }
 
 .book-btn {
@@ -139,23 +148,17 @@
   z-index: 3;
 }
 
-.wwo-header{
-  color: rgb(255, 255, 255);
-  font-size: 4rem;
-  margin-bottom: 0px;
-}
-
 .grid-1{
   display: flex;
-  padding: 60px;
-  padding-bottom: 1rem;
-  gap: 1rem;
+  padding: 70px;
+  padding-bottom: 1.4rem;
+  gap: 1.4rem;
 }
 .service-card{
   background-color: rgba(255, 255, 255, 0.934);
   box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
   border-radius: 14px;
-  padding: 10px;
+  padding: 14px;
   font-family: 'Hind', sans-serif;
   box-shadow: none;
                transition: all 0.6s;
@@ -165,7 +168,7 @@ justify-content: center;
 text-align: left;
 
 opacity: 0; /* Set initial opacity to 0 */
-transition: opacity 1s ease-in ;
+transition: opacity 1.5s ease-in ;
 
 }
 
@@ -176,15 +179,16 @@ transition: opacity 1s ease-in ;
 
 .grid-2 {
   display: flex;
-  padding: 60px;
-  gap: 1rem;
+  padding: 70px;
+  gap: 1.4rem;
   padding-top: 0px;
 }
 
 .service-title{
-  font-size: 1.5rem;
-  font-family: 'manrope';
+  font-size: 1.6rem;
+  font-family: 'manrope', sans-serif;
   font-weight: 900;
+  margin-top: 0px;
 
 }
 
@@ -192,8 +196,10 @@ transition: opacity 1s ease-in ;
   font-weight: bold;
   border-radius: 8px;
   margin: 0px;
-  text-align: center; background-color: #213547e3;
+  text-align: center;
+  background-color: #213547e3;
   width: 4rem;
+  padding: 2px;
   color: rgb(255, 255, 255);
 }
 
@@ -234,10 +240,7 @@ border-radius: 22px;
   -5px -5px 6px #e7e7e7;
 }
 
-#wwo-about {
-  color: #213547e3;
-  padding: 20px;
-}
+
 .about-text{
   font-family: sans-serif;
   display: flex;
@@ -271,13 +274,28 @@ border-radius: 22px;
   border-radius: 22px;
   padding: 12px;
   align-self: last baseline;
-  font-family: 'satoshi';
+  font-family: 'satoshi', sans-serif;
   font-weight: 700;
 }
 
 @keyframes slide-up{
   0% {transform: translateY(100%);}
   100% {transform: translateY(0%);}
+}
+.wwo-header, .wwo-about{
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  margin-bottom: 0px;
+  animation: slide-up 2s linear;
+  animation-play-state: paused;
+  opacity: 0; /* Set initial opacity to 0 */
+  transition: opacity 2s ease-in ;
+}
+
+#wwo-about {
+  color: #213547e3;
+  padding: 20px;
+  
 }
 
 /* Common styles for text bubbles */
@@ -290,7 +308,8 @@ border-radius: 22px;
   
   font-size: 1rem;
   line-height: 1.4;
-
+  filter: blur(25px);
+  transition: filter 62s;
   animation: slide-up 2s linear;
   animation-play-state: paused;
   opacity: 0; /* Set initial opacity to 0 */
@@ -343,6 +362,15 @@ border-radius: 22px;
   100% {transform: translateX(0%);}
 }
 
+@media screen and (max-width:726px) {
+  .contact-us, .about-div, .grid-1, .grid-2, .foot-contact,.hero{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+}
+
 
 .contact-us {
   height: 100vh;
@@ -381,7 +409,7 @@ border-radius: 22px;
   background-color: #213547e3;
   min-width: 130%;position: relative;
   z-index: 3;
-  font-family: 'satoshi';
+  font-family: 'satoshi', sans-serif;
   border-radius: 22px;
   animation: slide-right 3s linear;
   animation-play-state: paused;
@@ -418,13 +446,14 @@ border-radius: 22px;
   min-height: 16rem;
   background-color: rgb(255, 255, 255);
   position: relative;
-  font-family: 'satoshi';
+  font-family: 'satoshi', sans-serif;
   z-index: 3;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   align-items: center;
   border-top-right-radius: 22px;
   border-top-left-radius: 22px;
+  
 }
 
 .foot-contact{

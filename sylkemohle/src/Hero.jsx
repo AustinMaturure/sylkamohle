@@ -128,8 +128,8 @@ function Hero() {
       </section>
 
       <section className='contact-us' id='contact-us' ref={contactImageRef} >
-      
-        <address className="contact-text" ref={contactRef}>
+       <div className="contact-text" ref={contactRef}>
+        <address >
           <h1 className='cta-contact'>Make a Appointment with an Expert</h1>
           <div className="c-info">
               <h3 className='call-contact' href="tel:+27178263435">(+27) 17 826 3435</h3>
@@ -137,6 +137,8 @@ function Hero() {
           </div>
         
         </address>
+       </div>
+        
         <div className="contact-image-cnt">
           <img className='contact-image' src={contactImage} alt="" srcset="" loading='lazy' />
 

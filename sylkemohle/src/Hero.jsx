@@ -2,7 +2,7 @@
 import './Hero.css'
 
 import skyImage from '../assets/sky.webp';
-import modelImage from '../assets/model-glass-1.png';
+import modelImage from '../assets/model-glass-1.webp';
 import pexelsImage from '../assets/pexels-phot.webp';
 import contactImage from '../assets/pexels-photo-5715892.webp';
 

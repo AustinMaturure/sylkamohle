@@ -85,6 +85,7 @@
   text-align: left;
   padding: 20px;
   align-self: center;
+  letter-spacing: -0.06rem;
   margin-bottom: 0px;
   font-weight: 900;
   color: rgb(255, 255, 255);
@@ -192,14 +193,14 @@ transition: opacity 1.5s ease-in ;
 
 .service-title{
   font-size: 1.6rem;
-  font-family: 'manrope', sans-serif;
-  font-weight: 900;
+  font-family: 'Hind',sans-serif;
+  font-weight: 700;
   margin-top: 0px;
-
+  line-height: 1.3em;
 }
 
 .service-price{
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 8px;
   margin: 0px;
   text-align: center;
@@ -214,7 +215,165 @@ transition: opacity 1.5s ease-in ;
 
 }
 
-.About-section{
+.spectacle-section{
+  
+  top: 0;
+  min-height: 100vh;
+  min-height: 42rem;
+  position: relative;
+  z-index: 2;
+  background-size: cover;
+  border-radius: 22px;
+  
+}
+
+@keyframes slide{
+  from {
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(100%);
+  }
+}
+
+.pers-header{
+  margin: 0;
+ 
+  color: rgb(255, 255, 255);
+  letter-spacing: -1.5px;
+  font-weight: 800;
+  font-size: 4rem;
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.pers-desc{
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 0px;
+  line-height: 1.2em;
+  padding: 20px;
+  max-width: 20rem;
+  padding-top: 0px;
+
+  
+  font-size: 1.3rem;
+}
+
+
+
+.pres-sun{
+  display: flex;
+  flex-direction: column;
+  justify-content:last baseline;
+  align-items: last baseline;
+}
+
+#pers-head-sun{
+  text-align: right;
+  font-size: 3rem;
+  padding-top: 0px;
+}
+
+#pers-desc-sun{
+ 
+  padding-top: 0px;
+  font-size: 1rem;
+  max-width: 30rem;
+}
+.blocker{
+  width: 262px;
+  background-size: cover;
+  height: 110px;
+  background-color: bisque;
+  position: absolute;
+  border-bottom-left-radius: 60px;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 62px;
+  border-bottom-right-radius: 60px;
+  bottom: 41.7%;
+  left: 34.2%;
+  transition: all 2s;
+
+
+  z-index: 4;
+  
+  
+}
+
+.try-it-btn{
+  font-family: 'satoshi';
+  padding: 6px;
+  width: 5rem;
+  border-radius: 22px;
+  font-weight: 900;
+  color: #213547e3;
+  margin-left: 8px;
+  transition: all 1s;
+  border: 2px solid #213547e3;
+
+}
+
+.try-it-btn:hover{
+  background-color: #213547e3;
+  color: white;
+}
+
+.pres-disc{
+  position: absolute;
+  bottom:10%;
+  right: 3%;
+}
+
+#pers-head-disc{
+  font-size: 2.5rem;
+  
+}
+#pers-desc-disc{
+ font-size: 0.9rem;
+}
+
+.carousel-container{
+  
+overflow: hidden;
+  position: relative;
+ 
+  min-height: 26rem;
+
+  
+  display: flex;
+  
+  max-width: 90rem;
+  white-space: nowrap;
+  animation: slide 20s linear infinite ;
+ 
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+.carousel-inner{
+overflow: hidden;
+  max-height: 100%;
+  
+  display: inline;
+  position: absolute;
+  top:0;
+  gap: 0px;
+  list-style: none;
+
+}
+
+.carousel-inner img{
+
+  height: 50px;
+  width: 160px;
+}
+
+
+
+.about-section{
 
   z-index: 2;
   position: relative;
@@ -283,6 +442,7 @@ transition: opacity 1.5s ease-in ;
   align-self: last baseline;
   font-family: 'satoshi', sans-serif;
   font-weight: 700;
+
 }
 
 @keyframes slide-up{
@@ -295,13 +455,24 @@ transition: opacity 1.5s ease-in ;
   margin-bottom: 0px;
   animation: slide-up 2s linear;
   animation-play-state: paused;
+  text-align: left;
+  padding-left: 50px;
   opacity: 0; /* Set initial opacity to 0 */
   transition: opacity 2s ease-in ;
+  letter-spacing: -1.5px;
+  font-weight: 800;
+  
 }
 
 #wwo-about {
   color: #213547e3;
   padding: 20px;
+  padding-top: 40px;
+  text-align: center;
+  padding-left: 100px;
+  margin-top: 0px;
+  
+  
   
 }
 
@@ -313,7 +484,7 @@ transition: opacity 1.5s ease-in ;
   padding: 15px;
   border-radius: 40px;
   
-  font-size: 1rem;
+  font-size: 1.1rem;
   line-height: 1.4;
   filter: blur(25px);
   transition: filter 62s;

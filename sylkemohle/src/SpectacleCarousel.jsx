@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import raybanLogo from '../assets/rayban.svg';
 import bossLogo from '../assets/Boss.svg';
-import oakleyLogo from '../assets/oakley.svg';
+import oakleyLogo from '../assets/Oakley.svg';
 import michaelkorsLogo from '../assets/Michael Kors.svg';
 import polaroidLogo from '../assets/Polaroid.svg';
 import tomFordLogo from '../assets/Tom Ford.svg';

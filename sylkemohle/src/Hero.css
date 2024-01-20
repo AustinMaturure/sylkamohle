@@ -294,7 +294,7 @@ transition: opacity 1.5s ease-in ;
   width: 262px;
   background-size: cover;
   height: 110px;
-  background-color: bisque;
+  background-color: transparent;
   position: absolute;
   border-bottom-left-radius: 60px;
   border-top-left-radius: 36px;

@@ -291,16 +291,16 @@ transition: opacity 1.5s ease-in ;
   max-width: 30rem;
 }
 .blocker{
-  width: 262px;
+  width: 258px;
   background-size: cover;
-  height: 110px;
+  height: 106px;
   background-color: transparent;
   position: absolute;
   border-bottom-left-radius: 60px;
   border-top-left-radius: 36px;
   border-top-right-radius: 62px;
   border-bottom-right-radius: 60px;
-  bottom: 41.7%;
+  bottom: 42.2%;
   left: 34.2%;
   transition: all 2s;
 

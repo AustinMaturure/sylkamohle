@@ -22,7 +22,6 @@ const SpectacleCarousel = () => {
     const log=document.querySelectorAll('.Logo-img')
     log.forEach((image, index) => {
        image.style.filter= 'brightness(0) invert(1)' 
-
       });
 
     

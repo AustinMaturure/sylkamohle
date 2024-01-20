@@ -310,6 +310,15 @@ transition: opacity 1.5s ease-in ;
   
 }
 
+@media screen and (max-width:1440px){
+  .blocker{
+    bottom: 17.4rem;
+    left: 30.5rem;
+    width: 272px;
+    height: 126px;
+  }
+}
+
 .try-it-btn{
   font-family: 'satoshi';
   padding: 6px;

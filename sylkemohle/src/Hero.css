@@ -229,7 +229,7 @@ transition: opacity 1.5s ease-in ;
 
 @keyframes slide{
   from {
-    transform: translateX(-100%);
+    transform: translateX(-110%);
   }
   to{
     transform: translateX(100%);
@@ -246,6 +246,10 @@ transition: opacity 1.5s ease-in ;
   padding: 20px;
   text-transform: uppercase;
   text-align: left;
+  animation: slide-right 1s linear;
+  animation-play-state: paused;
+  opacity: 0;
+  transition: opacity 1s ease-in ;
 }
 .pers-desc{
   color: rgb(255, 255, 255);
@@ -256,6 +260,10 @@ transition: opacity 1.5s ease-in ;
   padding: 20px;
   max-width: 20rem;
   padding-top: 0px;
+  animation: slide-right 1s linear;
+  animation-play-state: paused;
+  opacity: 0;
+  transition: opacity 1s ease-in ;
 
   
   font-size: 1.3rem;
@@ -328,47 +336,50 @@ transition: opacity 1.5s ease-in ;
 
 #pers-head-disc{
   font-size: 2.5rem;
+  animation: slide-left 1s linear;
+  animation-play-state: paused;
+  opacity: 0;
+  transition: opacity 1s ease-in ;
   
 }
 #pers-desc-disc{
  font-size: 0.9rem;
+ animation: slide-right 1s linear;
+ animation-play-state: paused;
+ opacity: 0;
+ transition: opacity 1s ease-in ;
 }
 
 .carousel-container{
   
-overflow: hidden;
   position: relative;
- 
   min-height: 26rem;
-
-  
   display: flex;
-  
-  max-width: 90rem;
   white-space: nowrap;
-  animation: slide 20s linear infinite ;
- 
+  animation: slide 30s linear infinite ;
   padding: 0px;
   margin: 0px;
   
 }
 
 .carousel-inner{
-overflow: hidden;
+
   max-height: 100%;
   
   display: inline;
   position: absolute;
+  align-items: center;
   top:0;
   gap: 0px;
   list-style: none;
+  
 
 }
 
 .carousel-inner img{
 
   height: 50px;
-  width: 160px;
+  min-width: 160px;
 }
 
 

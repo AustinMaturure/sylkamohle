@@ -7,8 +7,9 @@ import polaroidLogo from '../assets/Polaroid.svg';
 import tomFordLogo from '../assets/Tom Ford.svg';
 import guessLogo from '../assets/Guess_logo.svg';
 import pumaLogo from '../assets/puma.svg';
-import eye from '../assets/pexels-fraser-3048507.jpg'
 import eyeSun from '../assets/fraser-sun.jpg'
+import eye from '../assets/pexels-fraser-3048507.jpg'
+
 import './Hero.css';
 import useElementInView from './ElementInView';
 

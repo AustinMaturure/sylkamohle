@@ -483,17 +483,17 @@ transition: opacity 1.5s ease-in ;
   max-width: 50%;
   margin-left: 10rem;
   overflow: visible;
-  box-shadow:  2px 2px 6px #2135479e,
+  box-shadow:  2px 2px 6px #07516D,
                -5px -5px 6px #e7e7e7;
   font-weight: bold;
   justify-self: right;
-  background-color: #213547e3;
+  background-color: #07516D;
   font-size: 1rem;
 }
 
 .about-qa-rep{
   background-color:rgba(255, 255, 255, 0.934) ;
-  color: #213547e3;
+  color: #07516D;
  
   line-height: 1.3em;
   border-radius: 22px;
@@ -524,7 +524,7 @@ transition: opacity 1.5s ease-in ;
 }
 
 #wwo-about {
-  color: #213547e3;
+  color: #07516D;
   padding: 20px;
   padding-top: 40px;
   text-align: center;
@@ -567,7 +567,7 @@ transition: opacity 1.5s ease-in ;
   border-width: 10px;
   border-radius: -1rem;
   border-style: solid;
-  border-color: transparent transparent transparent #213547e3;
+  border-color: transparent transparent transparent #07516D;
   transform: scaleX(-1); /* Adjust color as needed */
 }
 

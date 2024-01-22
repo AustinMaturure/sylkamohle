@@ -1,8 +1,8 @@
 
 import './Hero.css'
 
-import skyImage from '../assets/sky.webp';
-import modelImage from '../assets/model-glass-1.webp';
+import skyImage from '../assets/sky3.webp';
+
 import pexelsImage from '../assets/pexels-phot.webp';
 import contactImage from '../assets/pexels-photo-5715892.webp';
 
@@ -30,10 +30,7 @@ function Hero() {
         
       <h1 className='tag-line'>YOUR VISION, OUR EXPERTISE</h1>
       <p className='tag'>So you can see more of what's important in life.</p>
-      <div className='image-mod-cnt'>
-        
-        <img className="image-mod" src={modelImage} alt="" srcset="" loading="lazy"/>
-      </div>
+      
         
       </section>
       <section className="offer">

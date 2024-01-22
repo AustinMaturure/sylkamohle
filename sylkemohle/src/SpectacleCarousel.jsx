@@ -6,13 +6,14 @@ import michaelkorsLogo from '../assets/Michael Kors.svg';
 import polaroidLogo from '../assets/Polaroid.svg';
 import tomFordLogo from '../assets/Tom Ford.svg';
 import guessLogo from '../assets/Guess_logo.svg';
+import poloLogo from '../assets/polo.svg';
 import pumaLogo from '../assets/puma.svg';
 import eyeSun from '../assets/fraser-sun.jpg';
 import eye from '../assets/pexels-fraser-3048507.jpg';
 import './Hero.css';
 import useElementInView from './ElementInView';
 
-const logos = [raybanLogo, bossLogo, oakleyLogo, michaelkorsLogo, polaroidLogo, tomFordLogo, guessLogo, pumaLogo];
+const logos = [poloLogo,raybanLogo, bossLogo, oakleyLogo, michaelkorsLogo, polaroidLogo, tomFordLogo, guessLogo, pumaLogo];
 
 const SpectacleCarousel = () => {
   const [isEyeSunLoaded, setIsEyeSunLoaded] = useState(false);

@@ -5,7 +5,7 @@ import skyImage from '../assets/sky.webp';
 import modelImage from '../assets/model-glass-1.webp';
 import pexelsImage from '../assets/pexels-phot.webp';
 import contactImage from '../assets/pexels-photo-5715892.webp';
-import specImage from '../assets/pexels-fraser-3048507.jpg'
+
 import SpectacleCarousel from './SpectacleCarousel';
 
 import React from 'react';
@@ -19,6 +19,8 @@ function Hero() {
   const contactImageRef = useElementInView('.contact-image');
   const HeaderRef = useElementInView('.wwo-header');
   const HeaderARef = useElementInView('.wwo-about');
+
+ 
 
   
 
@@ -129,9 +131,9 @@ function Hero() {
 
         </div>
       </section>
-      <section className="spectacle-section"style={{backgroundImage:  `url(${specImage})`}}>
+
 <SpectacleCarousel></SpectacleCarousel>
-</section>
+
       <section className='contact-us' id='contact-us' ref={contactImageRef} >
        <div className="contact-text" ref={contactRef}>
         <address >

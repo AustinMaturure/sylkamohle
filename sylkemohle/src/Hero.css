@@ -224,8 +224,38 @@ transition: opacity 1.5s ease-in ;
   z-index: 2;
   background-size: cover;
   border-radius: 22px;
+  transition: all 1s;
   
 }
+// SpectacleCarousel.css
+.spectacle-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.eyeglasses {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+}
+
+.sunglasses {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.withSunglasses .sunglasses {
+  opacity: 1;
+}
+
+/* Add other styles as needed */
+
 
 @keyframes slide{
   from {
@@ -303,10 +333,19 @@ transition: opacity 1.5s ease-in ;
   bottom: 21.2rem;
   left: 27.3rem;
   transition: all 2s;
-
-
   z-index: 4;
   
+  
+}
+
+@media  screen and (max-width:1024px) {
+  .blocker{
+    bottom: 17.4rem;
+    left: 10.5rem;
+    width: 252px;
+    height: 136px;
+  }
+
   
 }
 

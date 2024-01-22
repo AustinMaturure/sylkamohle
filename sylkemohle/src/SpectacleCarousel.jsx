@@ -7,15 +7,17 @@ import polaroidLogo from '../assets/Polaroid.svg';
 import tomFordLogo from '../assets/Tom Ford.svg';
 import guessLogo from '../assets/Guess_logo.svg';
 import pumaLogo from '../assets/puma.svg';
-import eye from '../assets/eye-2.jpg';
-import eyeSun from '../assets/eye-sunglasses.jpg';
+import eye from '../assets/pexels-fraser-3048507.jpg'
+import eyeSun from '../assets/fraser-sun.jpg'
 import './Hero.css';
 import useElementInView from './ElementInView';
+
 
 const logos = [raybanLogo, bossLogo, oakleyLogo, michaelkorsLogo, polaroidLogo, tomFordLogo,,guessLogo, pumaLogo ];
 
 const SpectacleCarousel = () => {
   const [eyeImage, setEyeImage] = useState(eye);
+  
 
   const handleClick = () => {
     setEyeImage(eyeImage === eye ? eyeSun : eye);
@@ -33,6 +35,7 @@ const SpectacleCarousel = () => {
   const presDRef = useElementInView('#pers-desc-disc')
 
   return (
+    <section className="spectacle-section"style={{ backgroundImage: `url(${eyeImage})` }}>
     <>
       
       <h1 className='pers-header' ref={persHRef}>Need A Prescription?</h1>
@@ -42,7 +45,7 @@ const SpectacleCarousel = () => {
         <h3 className='pers-desc' id='pers-desc-sun'>Turn Any Prescription frame into Sunglasses... no seriously    <button className='try-it-btn' onClick={handleClick}>TRY IT</button></h3>
       </div>
 
-      <div className='blocker' style={{ backgroundImage: `url(${eyeImage})` }}></div>
+      
 
       <div className="carousel-container">
         <div className='carousel-inner'>
@@ -62,6 +65,7 @@ const SpectacleCarousel = () => {
        </h3>
       </div>
     </>
+    </section>
   );
 };
 

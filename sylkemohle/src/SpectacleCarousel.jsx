@@ -32,7 +32,9 @@ const SpectacleCarousel = () => {
       setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
       const log = document.querySelectorAll('.Logo-img');
       log.forEach((image, index) => {
+        image.style.transition ='all 0.3s'
         image.style.filter = 'brightness(0) invert(1)';
+        
       });
     }
   };

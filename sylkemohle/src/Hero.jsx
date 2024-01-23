@@ -151,7 +151,7 @@ function Hero() {
 
       </section>
       <section className='footer'>
-        <div ><h1 className='logo'>
+        <div className='logo-ctn' ><h1 className='logo'>
           Sylka Mölhe</h1>
           <p className='ocu-optometrist'>optomtree</p><p className='ocu-optometrist'>optometrist</p></div>
         

@@ -576,21 +576,87 @@ transition: opacity 1.5s ease-in ;
   100% {transform: translateX(0%);}
 }
 
-@media screen and (max-width:726px) {
-  .contact-us, .about-div, .grid-1, .grid-2, .foot-contact,.hero{
-    display: flex;
+@media screen and (max-width: 726px) {
+  .about-div, .grid-1, .grid-2,.footer, .foot-contact, .hero {
+    display: flex !important;
     flex-direction: column;
-   
-  }
-  .contact-us{
-    justify-content: center;
   }
   
+  .grid-1, .grid-2 {
+    padding: 14px;
+  }
+  
+  .wwo-header, #wwo-about {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    margin-top: 16px;
+  }
+  
+  #contact-us {
+    justify-content: center;
+    grid-template-columns: 1fr;
+    padding: 14px;
+  }
+
+  .contact-text{
+    min-width: 100%!important;
+    width: 10px;
+    background-color: red ; 
+    
+   
+  }
+   .logo-ctn, .foot-contact{
+    padding: 30px;
+   }
+
+   .foot-contact{
+    align-items: center !important;
+    justify-content: center;
+   }
+  .c-info{
+    padding: 6px;
+  }
+
+  .spectacle-section{
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    background-position: center;
+    
+  }
+
+  .pers-header{
+    max-width: 1rem;
+    text-wrap: wrap;
+    font-size: 2.8rem;
+  }
+
+  .hero{
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    background-position: center;
+  }
+  .tag-line{
+    font-size: 4rem;
+  }
+
+  .book-btn{
+    display: none;
+  }
+
+  .nav-links{
+    gap: 2px;
+    padding-left: 2px;
+  }
+
+  .about-image{
+   display: none;
+  }
 }
 
-
 .contact-us {
-  height: 100svh;
+  height: 100vh;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   padding: 40px;
@@ -600,6 +666,7 @@ transition: opacity 1.5s ease-in ;
   display: grid;
   grid-template-columns: 40% 60%;
 }
+
 .contact-image-ctn{
   align-self: center;
  
@@ -624,7 +691,8 @@ transition: opacity 1.5s ease-in ;
 
 .contact-text{
   background-color: #213547e3;
-  min-width: 130%;position: relative;
+  min-width: 130%;
+  position: relative;
   z-index: 3;
   font-family: 'satoshi', sans-serif;
   border-radius: 22px;

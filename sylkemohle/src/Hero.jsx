@@ -105,10 +105,10 @@ function Hero() {
             <img src={pexelsImage} alt="" srcset="" loading="lazy"/>
           </div>
           <div className="about-text" >
-          <h1 className='about-qa-head text-bubble left-triangle' >
+          <h1 className='about-qa-head text-bubble left-triangle' ref={textBubbleRef}>
     Why do we love helping you see the things you love?
   </h1>
-  <h3 className='about-qa-rep text-bubble right-triangle' ref={textBubbleRef}>
+  <h3 className='about-qa-rep text-bubble right-triangle' >
     Our passion lies in enhancing your vision for a brighter, more enjoyable life. We take pride in helping you see the things you love, ensuring your journey is clear, comfortable, and plain for you to see
   </h3>
   <h1 className='about-qa-head text-bubble left-triangle'>

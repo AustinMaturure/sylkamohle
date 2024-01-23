@@ -608,6 +608,10 @@ transition: opacity 1.5s ease-in ;
    .logo-ctn, .foot-contact{
     padding: 30px;
    }
+   .map{
+    padding-left: 50px;
+    padding-right: 50px;
+   }
 
    .foot-contact{
     align-items: center !important;

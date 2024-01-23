@@ -417,7 +417,7 @@ transition: opacity 1.5s ease-in ;
   min-height: 100svh;
   background-color: rgba(255, 255, 255, 0.863);
   border-radius: 22px;
-  color: #388AD2;
+ 
  
 
 }
@@ -460,17 +460,17 @@ transition: opacity 1.5s ease-in ;
   max-width: 50%;
   margin-left: 10rem;
   overflow: visible;
-  box-shadow:  2px 2px 6px #07516D,
+  box-shadow:  2px 2px 6px #213547e3,
                -5px -5px 6px #e7e7e7;
   font-weight: bold;
   justify-self: right;
-  background-color: #07516D;
+  background-color: #213547e3;
   font-size: 1rem;
 }
 
 .about-qa-rep{
   background-color:rgba(255, 255, 255, 0.934) ;
-  color: #07516D;
+  color: #1f1f1f;
  
   line-height: 1.3em;
   border-radius: 22px;
@@ -501,7 +501,7 @@ transition: opacity 1.5s ease-in ;
 }
 
 #wwo-about {
-  color: #07516D;
+  color: #213547e3;
   padding: 20px;
   padding-top: 40px;
   text-align: center;
@@ -544,7 +544,7 @@ transition: opacity 1.5s ease-in ;
   border-width: 10px;
   border-radius: -1rem;
   border-style: solid;
-  border-color: transparent transparent transparent #07516D;
+  border-color: transparent transparent transparent #213547e3;
   transform: scaleX(-1); /* Adjust color as needed */
 }
 
@@ -595,7 +595,8 @@ transition: opacity 1.5s ease-in ;
   #contact-us {
     justify-content: center;
     grid-template-columns: 1fr;
-    padding: 14px;
+    padding: 1px;
+    height: auto;
   }
 
   .contact-text{

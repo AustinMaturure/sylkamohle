@@ -595,16 +595,14 @@ transition: opacity 1.5s ease-in ;
   #contact-us {
     justify-content: center;
     grid-template-columns: 1fr;
-    padding: 1px;
+    border-radius: 0px;
+    padding: 0px;
     height: auto;
   }
 
   .contact-text{
     min-width: 100%!important;
-    width: 10px;
-    background-color: red ; 
-    
-   
+    border-radius: 1px !important;
   }
    .logo-ctn, .foot-contact{
     padding: 30px;
@@ -765,4 +763,16 @@ transition: opacity 1.5s ease-in ;
 
 .ocu-optometrist{
   margin: 0px;
+}
+
+.opening-times h4{
+  margin: 0px;
+}
+.opening-times{
+  display: flex;
+  gap: 12px;
+  color: rgb(255, 255, 255);
+  background-color: #213547e3;
+  padding: 12px;
+  border-radius: 12px;
 }

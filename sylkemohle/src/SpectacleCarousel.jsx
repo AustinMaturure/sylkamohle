@@ -28,7 +28,7 @@ const SpectacleCarousel = () => {
   }, []);
 
   const handleClick = () => {
-    if (isEyeSunLoaded) {
+   
       setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
       const log = document.querySelectorAll('.Logo-img');
       log.forEach((image, index) => {
@@ -36,7 +36,7 @@ const SpectacleCarousel = () => {
         image.style.filter = 'brightness(0) invert(1)';
         
       });
-    }
+    
   };
   
 
@@ -74,7 +74,7 @@ const SpectacleCarousel = () => {
           </div>
           <div className="carousel-inner">
             {logos.map((logo, index) => (
-              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Logo-img ${index + 1}`} />
+              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Logo-img ${index + 1}`} loading="lazy"/>
             ))}
           </div>
         </div>

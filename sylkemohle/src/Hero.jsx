@@ -26,7 +26,7 @@ function Hero() {
 
   return (
     <>
-      <section className="hero" style={{backgroundImage:  `url(${skyImage})`}} loading="lazy">
+      <section className="hero" style={{backgroundImage:  `url(${skyImage})`}} >
         
       <h1 className='tag-line'>YOUR VISION, OUR EXPERTISE</h1>
       <p className='tag'>So you can see more of what's important in life.</p>
@@ -49,11 +49,12 @@ function Hero() {
   </div>
 
   <div className='service-card' id='card-2'>
-    <h2 className='service-title'>Prescription Eyeglasses</h2>
+    <h2 className='service-title'>Contact Lenses</h2>
     <p className='service-price'>R50.00</p>
     <p className='service-description'>
-      Conducting eye exams to prescribe corrective lenses.
-      Assisting in selecting eyeglass frames and fitting contact lenses.
+      Looking for a more discreet look? We provide contact lenses in 
+      a variety of colors , so you can look good with every outfit with 
+      sacrificing your vision.
     </p>
   </div>
 
@@ -74,15 +75,18 @@ function Hero() {
     <p className='service-description'>
       Conducting eye exams to prescribe corrective lenses.
       Assisting in selecting eyeglass frames and fitting contact lenses.
+      With our wide range of well-known brands we ensure you not only see great
+        but look great too
     </p>
   </div>
 
   <div className='service-card' id='card-5'>
-    <h2 className='service-title'>Spectacle Frames</h2>
+    <h2 className='service-title'>Perscription Sunglasses</h2>
     <p className='service-price'>R50.00</p>
     <p className='service-description'>
-        With our wide range of well-known brands we ensure you not only see great
-        but look great to others
+        Choose from a variety of polarized/sunglass brands , or turn 
+        Your own frame into sunglasses, combining the best of style, comfort and 
+        protection
     </p>
   </div>
 
@@ -167,13 +171,23 @@ function Hero() {
       referrerPolicy="no-referrer-when-downgrade"
     ></iframe>
         </div>
-        <adress className="foot-contact">
+        <div className="foot-contact">
           <h3 className='call-whatsapp'> (+27) 82 775 1649</h3>
         <h3 className='foot-call-contact'>(+27) 17 826 3435</h3>
         <h3>
 3 Alfa Bldg, 11a Retief St Piet Retief 2380</h3>
-
-        </adress>
+<div className='opening-times'>
+  <div>
+    <h3>MON - FRI</h3>
+    <h4>08:00 - 17:00</h4>
+  </div>
+  <div ><h3>SAT</h3>
+    <h4>09:00 - 11:00</h4></div>
+    <div ><h3>SUN</h3>
+    <h4>CLOSED</h4></div>
+</div>
+  
+        </div>
       </section>
       </section>
      

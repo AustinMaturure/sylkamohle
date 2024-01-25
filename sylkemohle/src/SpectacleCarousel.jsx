@@ -13,6 +13,8 @@ import eyeSun from '../assets/fraser-sun.jpg';
 import eye from '../assets/pexels-fraser-3048507.jpg';
 import './Hero.css';
 import useElementInView from './ElementInView';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 const logos = [poloLogo,raybanLogo, bossLogo, oakleyLogo, michaelkorsLogo, polaroidLogo, tomFordLogo, guessLogo, pumaLogo];
 
@@ -64,6 +66,7 @@ const SpectacleCarousel = () => {
             <button className="try-it-btn" onClick={handleClick}>
               TRY IT
             </button>
+               <FontAwesomeIcon icon={faArrowLeft} className="left-icon"/> click me
           </h3>
         </div>
 

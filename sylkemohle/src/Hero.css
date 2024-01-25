@@ -15,6 +15,41 @@
   text-align: center;
   width: 96%; /* Ensure full width */
 }
+
+.rd-mre{
+  color: #213547e3;
+  border-radius: 22px;
+  padding: 5px;
+}
+
+.btn-arrow-up{
+
+color: #213547e3;
+text-align: right;
+font-size: 2rem;
+transition: all 0.5s;
+
+}
+
+.service-card:hover .btn-arrow-up{
+  transform: rotate(-45deg);
+}
+
+.arrow-cnt{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: flex-end;
+  gap: 10px;
+  right: 20px;
+  bottom: 0px;
+ 
+}
+
+.opt-nav{
+  font-size: 0.5rem;
+  text-align: center;
+}
 .service-link{
   text-decoration: none;
   color: #213547e3;
@@ -247,6 +282,15 @@ transition: opacity 1.5s ease-in ;
   }
 }
 
+@keyframes pulse{
+  from {
+    background-color: rgba(255, 255, 255, 0.338);
+  }
+  to{
+    background-color: rgb(255, 255, 255);
+  }
+}
+
 .pers-header{
   margin: 0;
  
@@ -349,7 +393,14 @@ transition: opacity 1.5s ease-in ;
   margin-left: 8px;
   transition: all 1s;
   border: 2px solid #213547e3;
+  animation: pulse 2s linear infinite;
+  transition: all 3s;
 
+}
+
+.left-icon {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .try-it-btn:hover{

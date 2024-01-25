@@ -4,7 +4,7 @@ export default function Navbar(){
     return(
         <div>
   <nav className="navbar"> 
-    <h2 className="logo-header">SYLKA MöHLE</h2>
+    <h2 className="logo-header">SYLKA MöHLE </h2>
    
     <ul className="nav-links">
       <li><a href="#services">Services</a></li>
@@ -12,7 +12,7 @@ export default function Navbar(){
       <li><a href="#contact-us">Contact Us</a></li>
     </ul>
     
-    <button className="book-btn">BOOK</button>
+    <button className="book-btn">CALL US</button>
   </nav>
 </div>
 

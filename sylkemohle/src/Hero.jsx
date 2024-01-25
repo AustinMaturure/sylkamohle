@@ -14,6 +14,8 @@ import useElementInView from './ElementInView';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import servicesData from './servicesData.json';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 
 function Hero() {
   
@@ -52,6 +54,9 @@ function Hero() {
       Checking for refractive errors (nearsightedness, farsightedness, astigmatism).
       Determining eye health and overall well-being.
     </p>
+   <div className="arrow-cnt">
+   <div><p className='rd-mre'>read more</p>
+    </div><FontAwesomeIcon icon ={faArrowAltCircleRight}className='btn-arrow-up'></FontAwesomeIcon> </div>
   </div>
   </Link>
   <Link to={`/services/2`}className='service-link'>
@@ -67,10 +72,10 @@ function Hero() {
   </Link>
   <Link to={`/services/3`}className='service-link'>
   <div className='service-card' id='card-3'>
-    <h2 className='service-title'>Vision Therapy</h2>
+    <h2 className='service-title'>Dialated Eye Exam</h2>
     <p className='service-price'>R50.00</p>
     <p className='service-description'>
-      Providing exercises and activities to improve visual skills.
+      Providing Cataract Screening as well as dialted eye exams.
       Addressing issues such as eye coordination and focusing problems.
     </p>
   </div>
@@ -87,6 +92,9 @@ function Hero() {
       With our wide range of well-known brands we ensure you not only see great
         but look great too
     </p>
+    <div className="arrow-cnt">
+   <div><p className='rd-mre'>read more</p>
+    </div><FontAwesomeIcon icon ={faArrowAltCircleRight}className='btn-arrow-up'></FontAwesomeIcon> </div>
   </div>
   </Link>
   <Link to={`/services/5`}className='service-link'>
@@ -153,7 +161,7 @@ function Hero() {
           <h1 className='cta-contact'>Make a Appointment with an Expert</h1>
           <div className="c-info">
               <h3 className='call-contact' href="tel:+27178263435">(+27) 17 826 3435</h3>
-          <h3 className='book-contact' href="sylka@interkom.co.za">Book</h3>
+          <h3 className='book-contact' href="sylka@interkom.co.za">CALL TO BOOK</h3>
           </div>
         
         </address>

@@ -288,7 +288,7 @@ transition: opacity 1.5s ease-in ;
 
 @keyframes pulse{
   from {
-    background-color: rgba(255, 255, 255, 0.338);
+    background-color: rgb(255, 255, 255);
   }
   to{
     background-color: rgb(255, 255, 255);

@@ -66,7 +66,7 @@ const SpectacleCarousel = () => {
             <button className="try-it-btn" onClick={handleClick}>
               TRY IT
             </button>
-               <FontAwesomeIcon icon={faArrowLeft} className="left-icon"/> click me
+               <FontAwesomeIcon icon={faArrowLeft} className="left-icon"/>click me
           </h3>
         </div>
 

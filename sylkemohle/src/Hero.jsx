@@ -71,8 +71,8 @@ function Hero() {
   </div>
  
   <div className='service-card' id='card-3'>
-    <h2 className='service-title'>Dialated Eye Exam</h2>
-    <p className='service-price'>R50.00</p>
+    <h2 className='service-title'>Dilated Eye Exam</h2>
+    <p className='service-price'>R200.00</p>
     <p className='service-description'>
       Providing Cataract Screening as well as dialted eye exams.
       Addressing issues such as eye coordination and focusing problems.

@@ -6,7 +6,7 @@ import spec from '../assets/pexels-francesco-paggiaro-1627639.jpg'
 import serviceData from '../src/servicesData.json'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock, faCoffee, faDollar, faMoneyBill } from '@fortawesome/free-solid-svg-icons';
+import { faClock, faMoneyBill } from '@fortawesome/free-solid-svg-icons';
 
 
 

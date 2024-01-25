@@ -8,8 +8,8 @@ export default function Footer(){
     return (
         <section className='footer'>
         <div className='logo-ctn' ><h1 className='logo'>
-          Sylka Mölhe</h1>
-          <p className='ocu-optometrist'>optomtree</p><p className='ocu-optometrist'>optometrist</p></div>
+          Sylka Möhle</h1>
+          <p className='ocu-optometrist'>oogkundige</p><p className='ocu-optometrist'>optometrist</p></div>
         
         <div className="map">
           <iframe

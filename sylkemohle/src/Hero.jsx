@@ -48,7 +48,7 @@ function Hero() {
 <Link to={`/services/1`}className='service-link'>
   <div className='service-card' id='card-1' >
     <h2 className='service-title'>Comprehensive OCT Exams</h2>
-    <p className='service-price'>R499.00</p>
+    <p className='service-price'>R599.00</p>
     <p className='service-description'>
       Assessing visual acuity (clarity of vision).
       Checking for refractive errors (nearsightedness, farsightedness, astigmatism).
@@ -59,7 +59,7 @@ function Hero() {
     </div><FontAwesomeIcon icon ={faArrowAltCircleRight}className='btn-arrow-up'></FontAwesomeIcon> </div>
   </div>
   </Link>
-  <Link to={`/services/2`}className='service-link'>
+
   <div className='service-card' id='card-2'>
     <h2 className='service-title'>Contact Lenses</h2>
     <p className='service-price'>R50.00</p>
@@ -69,8 +69,7 @@ function Hero() {
       sacrificing your vision.
     </p>
   </div>
-  </Link>
-  <Link to={`/services/3`}className='service-link'>
+ 
   <div className='service-card' id='card-3'>
     <h2 className='service-title'>Dialated Eye Exam</h2>
     <p className='service-price'>R50.00</p>
@@ -79,7 +78,7 @@ function Hero() {
       Addressing issues such as eye coordination and focusing problems.
     </p>
   </div>
-  </Link>
+
 </div>
 
 <div className="grid-2"><Link to={`/services/4`}className='service-link'>
@@ -92,12 +91,12 @@ function Hero() {
       With our wide range of well-known brands we ensure you not only see great
         but look great too
     </p>
-    <div className="arrow-cnt">
+     <div className="arrow-cnt">
    <div><p className='rd-mre'>read more</p>
     </div><FontAwesomeIcon icon ={faArrowAltCircleRight}className='btn-arrow-up'></FontAwesomeIcon> </div>
   </div>
   </Link>
-  <Link to={`/services/5`}className='service-link'>
+ 
   <div className='service-card' id='card-5'>
     <h2 className='service-title'>Perscription Sunglasses</h2>
     <p className='service-price'>R50.00</p>
@@ -107,8 +106,8 @@ function Hero() {
         protection
     </p>
   </div>
-  </Link>
-  <Link to={`/services/6`}className='service-link'>
+ 
+
   <div className='service-card' id='card-6'>
     <h2 className='service-title'>Driver's Test</h2>
     <p className='service-price'>R50.00</p>
@@ -116,7 +115,7 @@ function Hero() {
       Providing exercises and activities to improve visual skills.
       Addressing issues such as eye coordination and focusing problems.
     </p>
-  </div></Link>
+  </div>
 </div>
 
 

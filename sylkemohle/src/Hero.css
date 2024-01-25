@@ -19,7 +19,10 @@
 .rd-mre{
   color: #213547e3;
   border-radius: 22px;
-  padding: 5px;
+  padding: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: 1px solid #213547e3;
 }
 
 .btn-arrow-up{
@@ -28,6 +31,7 @@ color: #213547e3;
 text-align: right;
 font-size: 2rem;
 transition: all 0.5s;
+
 
 }
 

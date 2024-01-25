@@ -28,8 +28,11 @@ max-width: 100%;
 border-radius: 22px;
 align-self: center;
 align-items: center;
+
   }
-  
+.clock-icon{
+    margin-right: 10px;
+}  
 
 .navbarr{
    position: unset;

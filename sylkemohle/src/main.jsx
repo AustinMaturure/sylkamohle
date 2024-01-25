@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Navbar from './Navbar'
 import Hero from './Hero'
+import Footer from './footer'
 import './index.css'
 import {createBrowserRouter, Routes, Route, createRoutesFromElements, RouterProvider} from 'react-router-dom'
 
@@ -20,6 +21,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
 
     <RouterProvider router={router}/>
-    
+    <Footer></Footer>
   </React.StrictMode>,
 )

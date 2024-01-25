@@ -5,6 +5,9 @@ import './Hero.css'
 import spec from '../assets/pexels-francesco-paggiaro-1627639.jpg'
 import serviceData from '../src/servicesData.json'
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock, faCoffee, faDollar, faMoneyBill } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -29,6 +32,7 @@ export default function ServiceDetail() {
           <li><Link to="/#contact-us">Contact Us</Link></li>
           </ul>
           
+          
           <button className="book-btn">BOOK</button>
         </nav>
       </div> {console.log(serviceData.services)}
@@ -40,8 +44,8 @@ export default function ServiceDetail() {
                         <div className="service-descrption" key={service.id}>
                             <h1>{service.title}</h1>
                             <ul dangerouslySetInnerHTML={{ __html: service.description.map(item => `<li>${item}</li>`).join('') }}></ul>
-                            <p>{service.duration}</p>
-                            <p>{service.price}</p>
+                            <p> <FontAwesomeIcon icon={faClock} className="clock-icon"/>{service.duration}</p>
+                            <p> <FontAwesomeIcon icon={faMoneyBill} className="clock-icon"/>{service.price}</p>
                      
                         </div>
                         

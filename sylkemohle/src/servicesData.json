@@ -1,0 +1,73 @@
+{
+    "services": [
+      {
+        "id": "1",
+        "title": "Comprehensive OCT Exams",
+        "price": "R499.00",
+        "description": [
+          "Assessing visual acuity (clarity of vision).",
+          "Checking for refractive errors (nearsightedness, farsightedness, astigmatism).",
+          "Determining eye health and overall well-being.",
+          "Monitoring Progression: For individuals with retinal conditions, regular OCT exams help monitor the progression of the disease and assess the effectiveness of treatments.",
+          "Macular Edema: OCT is sensitive to detecting macular edema, which is the swelling of the macula (central part of the retina). This condition is common in diabetic retinopathy."
+        ],
+        "duration": "30-45 minutes"
+        
+      },
+      {
+        "id": "2",
+        "title": "Contact Lenses",
+        "price": "R50.00",
+        "description": [
+          "Looking for a more discreet look? We provide contact lenses in",
+          "a variety of colors, so you can look good with every outfit without",
+          "sacrificing your vision."
+        ],
+        "duration": "15-30 minutes"
+      },
+      {
+        "id": "3",
+        "title": "Vision Therapy",
+        "price": "R50.00",
+        "description": [
+          "Providing exercises and activities to improve visual skills.",
+          "Addressing issues such as eye coordination and focusing problems."
+        ],
+        "duration": "45-60 minutes"
+      },
+      {
+        "id": "4",
+        "title": "Prescription Eyeglasses",
+        "price": "R50.00",
+        "description": [
+          "Conducting eye exams to prescribe corrective lenses.",
+          "Assisting in selecting eyeglass frames and fitting contact lenses.",
+          "With our wide range of well-known brands, we ensure you not only see great",
+          "but look great too."
+        ],
+        "duration": "30-45 minutes"
+      },
+      {
+        "id": "5",
+        "title": "Prescription Sunglasses",
+        "price": "R50.00",
+        "description": [
+          "Choose from a variety of polarized/sunglass brands, or turn",
+          "your own frame into sunglasses, combining the best of style, comfort, and",
+          "protection."
+        ],
+        "duration": "15-30 minutes"
+      },
+      {
+        "id": "6",
+        "title": "Driver's Test",
+        "price": "R50.00",
+        "description": [
+          "Providing exercises and activities to improve visual skills.",
+          "Addressing issues such as eye coordination and focusing problems."
+        ],
+        "duration": "45-60 minutes"
+      }
+    ]
+  }
+  

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
+
 import raybanLogo from '../assets/rayban.svg';
 import bossLogo from '../assets/Boss.svg';
 import oakleyLogo from '../assets/Oakley.svg';

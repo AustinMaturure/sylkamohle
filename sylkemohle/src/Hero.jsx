@@ -11,6 +11,10 @@ import SpectacleCarousel from './SpectacleCarousel';
 import React from 'react';
 import useElementInView from './ElementInView';
 
+import { Link } from 'react-router-dom';
+import Navbar from './Navbar';
+import servicesData from './servicesData.json';
+
 function Hero() {
   
   const textBubbleRef = useElementInView('.text-bubble');
@@ -26,6 +30,7 @@ function Hero() {
 
   return (
     <>
+      <Navbar></Navbar>
       <section className="hero" style={{backgroundImage:  `url(${skyImage})`}} >
         
       <h1 className='tag-line'>YOUR VISION, OUR EXPERTISE</h1>
@@ -38,8 +43,9 @@ function Hero() {
          <div className="offer-content" id='services'>
          <h1 className='wwo-header' ref={HeaderRef} >OUR SERVICES</h1>
 <div className="grid-1" ref={serviceCardRef}>
+<Link to={`/services/1`}className='service-link'>
   <div className='service-card' id='card-1' >
-    <h2 className='service-title'>Comprehensive Eye Exams</h2>
+    <h2 className='service-title'>Comprehensive OCT Exams</h2>
     <p className='service-price'>R499.00</p>
     <p className='service-description'>
       Assessing visual acuity (clarity of vision).
@@ -47,7 +53,8 @@ function Hero() {
       Determining eye health and overall well-being.
     </p>
   </div>
-
+  </Link>
+  <Link to={`/services/2`}className='service-link'>
   <div className='service-card' id='card-2'>
     <h2 className='service-title'>Contact Lenses</h2>
     <p className='service-price'>R50.00</p>
@@ -57,7 +64,8 @@ function Hero() {
       sacrificing your vision.
     </p>
   </div>
-
+  </Link>
+  <Link to={`/services/3`}className='service-link'>
   <div className='service-card' id='card-3'>
     <h2 className='service-title'>Vision Therapy</h2>
     <p className='service-price'>R50.00</p>
@@ -66,9 +74,10 @@ function Hero() {
       Addressing issues such as eye coordination and focusing problems.
     </p>
   </div>
+  </Link>
 </div>
 
-<div className="grid-2">
+<div className="grid-2"><Link to={`/services/4`}className='service-link'>
   <div className='service-card' id='card-4'>
     <h2 className='service-title'>Prescription Eyeglasses</h2>
     <p className='service-price'>R50.00</p>
@@ -79,7 +88,8 @@ function Hero() {
         but look great too
     </p>
   </div>
-
+  </Link>
+  <Link to={`/services/5`}className='service-link'>
   <div className='service-card' id='card-5'>
     <h2 className='service-title'>Perscription Sunglasses</h2>
     <p className='service-price'>R50.00</p>
@@ -89,7 +99,8 @@ function Hero() {
         protection
     </p>
   </div>
-
+  </Link>
+  <Link to={`/services/6`}className='service-link'>
   <div className='service-card' id='card-6'>
     <h2 className='service-title'>Driver's Test</h2>
     <p className='service-price'>R50.00</p>
@@ -97,8 +108,9 @@ function Hero() {
       Providing exercises and activities to improve visual skills.
       Addressing issues such as eye coordination and focusing problems.
     </p>
-  </div>
+  </div></Link>
 </div>
+
 
 </div>
 

@@ -15,7 +15,10 @@
   text-align: center;
   width: 96%; /* Ensure full width */
 }
-
+.service-link{
+  text-decoration: none;
+  color: #213547e3;
+}
 .logo-header {
   background-color: rgb(255, 255, 255);
   color: #388AD2;
@@ -26,7 +29,7 @@
   font-family: sans-serif;
 }
 
-.nav-links {
+.nav-links , .nav-link{
   flex: 1; /* Use remaining space */
   display: flex;
   gap: 1rem;
@@ -35,7 +38,7 @@
   align-items: center;
 }
 
-.nav-links a {
+.nav-links a, .nav-link a{
   color: rgb(255, 255, 255);
   text-decoration: none;
   transition: all 1s;
@@ -196,6 +199,7 @@ transition: opacity 1.5s ease-in ;
   font-family: 'Hind',sans-serif;
   font-weight: 700;
   margin-top: 0px;
+  color: #213547e3;
   line-height: 1.3em;
 }
 
@@ -470,14 +474,14 @@ transition: opacity 1.5s ease-in ;
 
 .about-qa-rep{
   background-color:rgba(255, 255, 255, 0.934) ;
-  color: #1f1f1f;
+  color: #213547e3;
  
   line-height: 1.3em;
   border-radius: 22px;
   padding: 12px;
   align-self: last baseline;
   font-family: 'satoshi', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 
 }
 
@@ -773,6 +777,7 @@ transition: opacity 1.5s ease-in ;
   gap: 12px;
   color: rgb(255, 255, 255);
   background-color: #213547e3;
+
   padding: 12px;
   border-radius: 12px;
 }

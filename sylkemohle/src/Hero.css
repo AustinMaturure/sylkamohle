@@ -682,7 +682,8 @@ transition: opacity 1.5s ease-in ;
   }
 
   .arrow-cnt{
-    bottom: 2px;
+    position: relative;
+    display: flex
   }
 
   .spectacle-section{

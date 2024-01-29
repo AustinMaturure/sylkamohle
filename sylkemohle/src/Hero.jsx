@@ -61,9 +61,12 @@ function Hero() {
   </Link>
 
   <div className='service-card' id='card-2'>
-    <h2 className='service-title'>Contact Lenses</h2>
-    <p className='service-price'>R450.00</p>
-    <p className='service-description'>
+    <h2 className='service-title'  style={{marginBottom:'0px' }}>Contact Lenses</h2>
+    <div style={{display:'flex', alignItems:'center', gap:'10px', padding:'0px'}}className='price-container'>
+        <p  >from</p>
+        <p className='service-price' >R450.00</p>
+    </div>
+    <p className='service-description'  style={{marginTop:'0px' }}>
       Looking for a more discreet look? We provide contact lenses in 
       a variety of colors , so you can look good with every outfit with 
       sacrificing your vision.
@@ -83,9 +86,12 @@ function Hero() {
 
 <div className="grid-2"><Link to={`/services/4`}className='service-link'>
   <div className='service-card' id='card-4'>
-    <h2 className='service-title'>Prescription Eyeglasses</h2>
-    <p className='service-price'>R1 300.00</p>
-    <p className='service-description'>
+    <h2 className='service-title' style={{marginBottom:'0px' }}>Prescription Eyeglasses</h2>
+    <div style={{display:'flex', alignItems:'center', gap:'10px', padding:'0px'}}className='price-container'>
+        <p >from</p>
+        <p className='service-price' >R1 300.00</p>
+    </div>
+    <p className='service-description' style={{marginTop:'0px' }}>
       Conducting eye exams to prescribe corrective lenses.
       Assisting in selecting eyeglass frames and fitting contact lenses.
       With our wide range of well-known brands we ensure you not only see great
@@ -98,9 +104,12 @@ function Hero() {
   </Link>
  
   <div className='service-card' id='card-5'>
-    <h2 className='service-title'>Perscription Sunglasses</h2>
-    <p className='service-price'>R1 300.00</p>
-    <p className='service-description'>
+    <h2 className='service-title' style={{marginBottom:'0px' }}>Perscription Sunglasses</h2>
+    <div style={{display:'flex', alignItems:'center', gap:'10px', padding:'0px'}}className='price-container'>
+        <p >from</p>
+        <p className='service-price' >R1 300.00</p>
+    </div>
+    <p className='service-description'style={{marginTop:'0px' }}>
         Choose from a variety of polarized/sunglass brands , or turn 
         Your own frame into sunglasses, combining the best of style, comfort and 
         protection

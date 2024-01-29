@@ -254,7 +254,8 @@ transition: opacity 1.5s ease-in ;
 }
 
 .service-description{
-  color: #213547e3
+  color: #213547e3;
+
 
 }
 
@@ -678,6 +679,10 @@ transition: opacity 1.5s ease-in ;
    }
   .c-info{
     padding: 6px;
+  }
+
+  .arrow-cnt{
+    bottom: 2px;
   }
 
   .spectacle-section{

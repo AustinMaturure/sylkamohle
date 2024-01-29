@@ -3,11 +3,12 @@
       {
         "id": "1",
         "title": "Comprehensive OCT Exams",
-        "price": "R499.00",
+        "price": "R 600.00",
         "description": [
           "Assessing visual acuity (clarity of vision).",
           "Checking for refractive errors (nearsightedness, farsightedness, astigmatism).",
           "Determining eye health and overall well-being.",
+          "Checking for glaucoma and Cataracts",
           "Monitoring Progression: For individuals with retinal conditions, regular OCT exams help monitor the progression of the disease and assess the effectiveness of treatments.",
           "Macular Edema: OCT is sensitive to detecting macular edema, which is the swelling of the macula (central part of the retina). This condition is common in diabetic retinopathy."
         ],
@@ -17,12 +18,12 @@
       {
         "id": "4",
         "title": "Prescription Eyeglasses",
-        "price": "R50.00",
+        "price": "from R1 300.00",
         "description": [
           "Conducting eye exams to prescribe corrective lenses.",
           "Assisting in selecting eyeglass frames and fitting contact lenses.",
-          "With our wide range of well-known brands, we ensure you not only see great",
-          "but look great too."
+          "With our wide range of well-known brands, we ensure you not only see great but look great too.",
+          "Protect your eyes with BlueGuard lenses from ZIESS"
         ],
         "duration": "30-45 minutes"
       }

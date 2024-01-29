@@ -52,7 +52,7 @@ const SpectacleCarousel = () => {
   const presDRef = useElementInView('#pers-desc-disc');
 
   return (
-    <section className="spectacle-section" style={{ backgroundImage: `url(${eyeImage})` }}>
+    <section className="spectacle-section"  style={{ backgroundImage: `url(${eyeImage})` }}>
       <>
         <h1 className="pers-header" ref={persHRef}>
           Need A Prescription?
@@ -77,7 +77,7 @@ const SpectacleCarousel = () => {
           <div className="carousel-inner">
            
             {logos.map((logo, index) => (
-              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Logo-img ${index + 1}`} />
+              <img key={index} src={logo} loading='lazy' className={`Logo-img ${index + 1}`} alt={`Logo-img ${index + 1}`} />
             ))}
           </div>
           <div className="carousel-inner">

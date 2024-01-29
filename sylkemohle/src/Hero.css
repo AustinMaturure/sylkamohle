@@ -687,7 +687,12 @@ transition: opacity 1.5s ease-in ;
     justify-content: flex-start;
     padding-left: 1rem;
   }
-
+  .service-title{
+    font-size: 2rem;
+  }
+  .service-description{
+    font-size: 1.4rem;
+  }
   .spectacle-section{
     background-size: cover;
     background-repeat: no-repeat;

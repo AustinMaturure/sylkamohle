@@ -2,8 +2,8 @@ import React from "react";
 import { useParams } from "react-router";
 import '../src/servicedetail.css'
 import './Hero.css'
-import spec from '../assets/pexels-francesco-paggiaro-1627639.jpg'
-import oct from '../assets/oct.jpg'
+import spec from '../assets/eye-glasses.webp'
+import oct from '../assets/oct.webp'
 import serviceData from '../src/servicesData.json'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

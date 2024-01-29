@@ -683,7 +683,9 @@ transition: opacity 1.5s ease-in ;
 
   .arrow-cnt{
     position: relative;
-    display: flex
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 1rem;
   }
 
   .spectacle-section{

@@ -248,7 +248,7 @@ transition: opacity 1.5s ease-in ;
   margin: 0px;
   text-align: center;
   background-color: #213547e3;
-  width: 4rem;
+  width: 5rem;
   padding: 2px;
   color: rgb(255, 255, 255);
 }
@@ -279,7 +279,7 @@ transition: opacity 1.5s ease-in ;
 
 @keyframes slide{
   from {
-    transform: translateX(-110%);
+    transform: translateX(-180%);
   }
   to{
     transform: translateX(100%);
@@ -440,7 +440,8 @@ transition: opacity 1.5s ease-in ;
   min-height: 26rem;
   display: flex;
   white-space: nowrap;
-  animation: slide 30s linear infinite ;
+  animation: slide 48s linear infinite ;
+  transition: all 2s;
   padding: 0px;
   margin: 0px;
   

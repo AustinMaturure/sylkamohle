@@ -62,7 +62,7 @@ function Hero() {
 
   <div className='service-card' id='card-2'>
     <h2 className='service-title'>Contact Lenses</h2>
-    <p className='service-price'>R50.00</p>
+    <p className='service-price'>R450.00</p>
     <p className='service-description'>
       Looking for a more discreet look? We provide contact lenses in 
       a variety of colors , so you can look good with every outfit with 
@@ -84,7 +84,7 @@ function Hero() {
 <div className="grid-2"><Link to={`/services/4`}className='service-link'>
   <div className='service-card' id='card-4'>
     <h2 className='service-title'>Prescription Eyeglasses</h2>
-    <p className='service-price'>R50.00</p>
+    <p className='service-price'>R1 300.00</p>
     <p className='service-description'>
       Conducting eye exams to prescribe corrective lenses.
       Assisting in selecting eyeglass frames and fitting contact lenses.
@@ -99,7 +99,7 @@ function Hero() {
  
   <div className='service-card' id='card-5'>
     <h2 className='service-title'>Perscription Sunglasses</h2>
-    <p className='service-price'>R50.00</p>
+    <p className='service-price'>R1 300.00</p>
     <p className='service-description'>
         Choose from a variety of polarized/sunglass brands , or turn 
         Your own frame into sunglasses, combining the best of style, comfort and 
@@ -138,7 +138,7 @@ function Hero() {
     Why choose us?
   </h1>
   <h3 className='about-qa-rep text-bubble right-triangle'>
-  With years of experience, our highly qualified optometrists bring expertise to every examination. We utilize advanced technology, ensuring accurate diagnoses and tailored solutions for your eye health
+  With 31 years of experience, our highly qualified optometrists bring expertise to every examination. We utilize advanced technology, ensuring accurate diagnoses and tailored solutions for your eye health
   </h3>
   <h1 className='about-qa-head text-bubble left-triangle'>
     What will you see the moment you check-in?

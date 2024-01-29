@@ -24,11 +24,12 @@ export default function Footer(){
     ></iframe>
         </div>
         <div className="foot-contact">
-          <h3 className='call-whatsapp'> <FontAwesomeIcon icon={faMessage} className="clock-icon"/>(+27) 82 775 1649</h3>
+          <h3 className='call-whatsapp'> <FontAwesomeIcon icon={faMessage} className="clock-icon"/>(+27) 82 554 2925</h3>
         <h3 className='foot-call-contact'> <FontAwesomeIcon icon={faPhone} className="clock-icon"/> (+27) 17 826 3435</h3>
         <h3>
+   
         
-        <FontAwesomeIcon icon={faLocation} className="clock-icon"/>3 Alfa Bldg, 11a Retief St Piet Retief 2380</h3>
+        <FontAwesomeIcon icon={faLocation} className="clock-icon"/>3 Alfa Bulding, 11a Retief St Piet Retief</h3>
 <div className='opening-times'>
   <div>
     <h3>MON - FRI</h3>

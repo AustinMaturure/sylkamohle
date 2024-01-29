@@ -1,22 +1,25 @@
 import React, { useState, useEffect} from 'react';
 
-import raybanLogo from '../assets/rayban.svg';
+import zeissLogo from '../assets/zeiss.svg';
 import bossLogo from '../assets/Boss.svg';
 import oakleyLogo from '../assets/Oakley.svg';
 import michaelkorsLogo from '../assets/Michael Kors.svg';
-import polaroidLogo from '../assets/Polaroid.svg';
-import tomFordLogo from '../assets/Tom Ford.svg';
+import oceanLogo from '../assets/ocean.svg';
+import elleLogo from '../assets/elle.svg';
 import guessLogo from '../assets/Guess_logo.svg';
 import poloLogo from '../assets/polo.svg';
 import pumaLogo from '../assets/puma.svg';
+import JeepLogo from '../assets/Jeep.svg';
 import eyeSun from '../assets/fraser-sun.jpg';
+import brentoniLogo from '../assets/brentonr.svg';
+import annaLogo from '../assets/anna-hickmann.svg'
 import eye from '../assets/pexels-fraser-3048507.jpg';
 import './Hero.css';
 import useElementInView from './ElementInView';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-const logos = [poloLogo,raybanLogo, bossLogo, oakleyLogo, michaelkorsLogo, polaroidLogo, tomFordLogo, guessLogo, pumaLogo];
+const logos = [ JeepLogo, annaLogo,oceanLogo, zeissLogo, poloLogo,brentoniLogo, bossLogo, oakleyLogo, michaelkorsLogo, guessLogo, pumaLogo, elleLogo];
 
 const SpectacleCarousel = () => {
   const [isEyeSunLoaded, setIsEyeSunLoaded] = useState(false);
@@ -72,6 +75,7 @@ const SpectacleCarousel = () => {
 
         <div className="carousel-container">
           <div className="carousel-inner">
+           
             {logos.map((logo, index) => (
               <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Logo-img ${index + 1}`} />
             ))}

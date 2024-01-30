@@ -525,7 +525,7 @@ transition: opacity 1.5s ease-in ;
 }
 
 @keyframes slide-up{
-  0% {transform: translateY(50%);}
+  0% {transform: translateY(90%);}
   100% {transform: translateY(0%);}
 }
 .wwo-header, .wwo-about{
@@ -696,10 +696,12 @@ transition: opacity 1.5s ease-in ;
   }
 
   #pers-desc-disc {
-    color: #213547;
+    background-color: #213547e3;
+    padding: 20px;
+    border-radius: 22px;
   }
   #pers-head-disc{
-    color: #213547;
+    
   }
 
   .pers-header{

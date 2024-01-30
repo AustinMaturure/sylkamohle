@@ -731,7 +731,12 @@ transition: opacity 1.5s ease-in ;
     background-position: center;
   }
   .tag-line{
-    font-size: 4rem;
+    font-size: 5rem;
+    font-weight: 900;
+  }
+
+  .tag{
+    font-size: 1rem;
   }
 
   .book-btn{

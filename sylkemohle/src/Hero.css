@@ -368,25 +368,7 @@ transition: opacity 1.5s ease-in ;
   
 }
 
-@media  screen and (max-width:1024px) {
-  .blocker{
-    bottom: 17.4rem;
-    left: 10.5rem;
-    width: 252px;
-    height: 136px;
-  }
 
-  
-}
-
-@media screen and (max-width:1440px){
-  .blocker{
-    bottom: 17.4rem;
-    left: 30.5rem;
-    width: 272px;
-    height: 126px;
-  }
-}
 
 .try-it-btn{
   font-family: 'satoshi';
@@ -543,7 +525,7 @@ transition: opacity 1.5s ease-in ;
 }
 
 @keyframes slide-up{
-  0% {transform: translateY(100%);}
+  0% {transform: translateY(50%);}
   100% {transform: translateY(0%);}
 }
 .wwo-header, .wwo-about{

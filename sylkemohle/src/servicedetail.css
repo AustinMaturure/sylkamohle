@@ -28,6 +28,11 @@
 
         body {
           overflow-x: hidden;
+          max-width: 100svw;
+      }
+
+      .nav-links, .nav-link{
+        gap: 1px;
       }
 
       .logo-header{
@@ -36,6 +41,11 @@
 
       * {
         box-sizing: border-box;
+    }
+
+    .nav-link a {
+      border: 0px solid !important;
+     line-height: 0.1em;
     }
 
     
@@ -74,6 +84,7 @@ z-index: 2;
    text-transform: uppercase;
   color: #388AD2;
  display: flex;
+ width: 96%;
 
   z-index: 2;
   top: 0;

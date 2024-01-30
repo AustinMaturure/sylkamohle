@@ -34,9 +34,11 @@ function Hero() {
     <>
       <Navbar></Navbar>
       <section className="hero" style={{backgroundImage:  `url(${skyImage})`}} >
-        
-      <h1 className='tag-line'>YOUR VISION, OUR EXPERTISE</h1>
+
+      <div className="hero-title"> <h1 className='tag-line'>YOUR VISION, OUR EXPERTISE</h1>
       <p className='tag'>So you can see more of what's important in life.</p>
+        </div>  
+     
       
         
       </section>

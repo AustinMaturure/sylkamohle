@@ -663,6 +663,10 @@ transition: opacity 1.5s ease-in ;
     padding: 6px;
   }
 
+  .contact-text, .contact-image{
+    animation: none !important;
+  }
+
   .arrow-cnt{
     position: relative;
     display: flex;
@@ -680,7 +684,14 @@ transition: opacity 1.5s ease-in ;
     background-repeat: no-repeat;
    
     background-position: center;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+   
     
+  }
+
+  .contact-image{
+  border-radius: 0px !important;
   }
 
   .pers-header{

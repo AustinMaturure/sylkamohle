@@ -692,6 +692,14 @@ transition: opacity 1.5s ease-in ;
 
   .contact-image{
   border-radius: 0px !important;
+  min-height: 100%;
+  }
+
+  #pers-desc-disc {
+    color: #213547;
+  }
+  #pers-head-disc{
+    color: #213547;
   }
 
   .pers-header{

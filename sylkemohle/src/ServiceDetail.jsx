@@ -43,7 +43,7 @@ export default function ServiceDetail() {
 
                         </div>
                         <div className="service-descrption" key={service.id}>
-                            <h1>{service.title}</h1>
+                            <h1 className="service-detail-title">{service.title}</h1>
                             <ul dangerouslySetInnerHTML={{ __html: service.description.map(item => `<li>${item}</li>`).join('') }}></ul>
                             <p> <FontAwesomeIcon icon={faClock} className="clock-icon"/>{service.duration}</p>
                             <p> <FontAwesomeIcon icon={faMoneyBill} className="clock-icon"/>{service.price}</p>

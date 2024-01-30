@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useParams } from "react-router";
 import '../src/servicedetail.css'
 import './Hero.css'
@@ -13,14 +13,19 @@ import { faClock, faMoneyBill } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function ServiceDetail() {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top when the component mounts
+  }, []);
+
     const { serviceId } = useParams();
-    console.log(serviceId);
   
     const service = serviceData.services.find(service => service.id == serviceId);
   
     if (!service) {
       return <div>Service not found</div>;
     }
+
   
     return (
         <>   <div>

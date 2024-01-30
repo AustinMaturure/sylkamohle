@@ -4,12 +4,12 @@ import Navbar from './Navbar'
 import Hero from './Hero'
 import Footer from './footer'
 import './index.css'
-import {createBrowserRouter, Routes, Route, createRoutesFromElements, RouterProvider} from 'react-router-dom'
+import {createBrowserRouter, Route, createRoutesFromElements, RouterProvider} from 'react-router-dom'
 
 import ServiceDetail from './ServiceDetail'
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route>
+        <Route scrollToTop>
             <Route index element={<Hero />}></Route>
             <Route path='services/:serviceId' element={<ServiceDetail />} />
         </Route>

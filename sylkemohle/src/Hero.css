@@ -732,6 +732,10 @@ transition: opacity 1.5s ease-in ;
   .about-image{
    display: none;
   }
+
+  .foot-contact{
+    margin-left: 0px;
+  }
 }
 
 .contact-us {

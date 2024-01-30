@@ -1,5 +1,5 @@
 .service-detail-cnt {
-    max-width: 100vw;
+    max-width: 100svw;
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-content: center;
@@ -8,6 +8,7 @@
     column-gap: 20px;
     border-bottom: 1px solid #213547;
     border-radius: 2px;
+    overflow-x: hidden;
     
     box-shadow: 3px 3px  #213547;
   }
@@ -17,6 +18,10 @@
         display: flex;
         flex-direction: column;
         box-shadow: none;
+       }
+
+        .nav-link{
+        padding-left: 0px;
        }
         .service-descrption{
  margin-right: 0px !important;

@@ -77,12 +77,12 @@ const SpectacleCarousel = () => {
           <div className="carousel-inner">
            
             {logos.map((logo, index) => (
-              <img key={index} src={logo} loading='lazy' className={`Logo-img ${index + 1}`} alt={`Logo-img ${index + 1}`} />
+              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Logo-img ${index + 1}`} />
             ))}
           </div>
           <div className="carousel-inner">
             {logos.map((logo, index) => (
-              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Logo-img ${index + 1}`} loading="lazy"/>
+              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Logo-img ${index + 1}`} />
             ))}
           </div>
         </div>

@@ -306,10 +306,10 @@ transition: opacity 1.5s ease-in ;
 
 @keyframes pulse{
   from {
-    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
   }
   to{
-    background-color: rgb(255, 255, 255);
+    color: #213547e3;
   }
 }
 
@@ -670,6 +670,15 @@ transition: opacity 1.5s ease-in ;
    .logo-header{
     font-size: 1.2rem;
    }
+
+   @keyframes slide{
+    from {
+      transform: translateX(calc(-100% * 6));
+    }
+    to{
+      transform: translateX(100%);
+    }
+  }
    .map{
     padding-left: 90px;
     padding-right: 90px;
@@ -682,6 +691,8 @@ transition: opacity 1.5s ease-in ;
   .c-info{
     padding: 6px;
   }
+
+  
 
   .contact-text, .contact-image{
     animation: none !important;

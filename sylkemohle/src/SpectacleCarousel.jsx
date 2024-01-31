@@ -9,10 +9,12 @@ import guessLogo from '../assets/Guess_logo.svg';
 import poloLogo from '../assets/polo.svg';
 import pumaLogo from '../assets/puma.svg';
 import JeepLogo from '../assets/Jeep.svg';
-import eyeSun from '../assets/tinywow_sun_46551705.webp';
+import eyeSun from '../assets/fraser-sun.webp';
 import brentoniLogo from '../assets/brentonr.svg';
 import annaLogo from '../assets/anna-hickmann.svg'
-import eye from '../assets/tinywow_nosun_46551624.webp';
+import eye from '../assets/fraser-persc.webp';
+import eyeMobile from '../assets/no-sun-mobile.webp';
+import eyeSunMobile from '../assets/sun-mobile.webp';
 import './Hero.css';
 import useElementInView from './ElementInView';
 
@@ -22,6 +24,9 @@ const logos = [oakleyLogo, JeepLogo, annaLogo,oceanLogo, zeissLogo, poloLogo,bre
 const SpectacleCarousel = () => {
   const [isEyeSunLoaded, setIsEyeSunLoaded] = useState(false);
   const [eyeImage, setEyeImage] = useState(eye);
+  const [eyeImageMobile, setEyeImageMobile] = useState(eyeMobile);
+ 
+  const isMobile = window.innerWidth <= 768;
 
   useEffect(() => {
     const preloadImage = new Image();
@@ -32,8 +37,7 @@ const SpectacleCarousel = () => {
   }, []);
 
   const handleClick = () => {
-   
-      setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
+    isMobile ? setEyeImageMobile((prevImage) => (prevImage === eyeMobile ? eyeSunMobile : eyeMobile)) : setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
       const log = document.querySelectorAll('.Logo-img');
       log.forEach((image, index) => {
         image.style.transition ='all 0.3s'
@@ -50,7 +54,7 @@ const SpectacleCarousel = () => {
   const presDRef = useElementInView('#pers-desc-disc');
 
   return (
-    <section className="spectacle-section"  style={{ backgroundImage: `url(${eyeImage})` }}>
+    <section className="spectacle-section"  style={{ backgroundImage: `url(${isMobile ? eyeImageMobile:eyeImage})` }}>
       <>
         <h1 className="pers-header" ref={persHRef}>
           Need A Prescription?

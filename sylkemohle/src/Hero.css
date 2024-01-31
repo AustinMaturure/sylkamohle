@@ -664,6 +664,9 @@ transition: opacity 1.5s ease-in ;
    .logo-ctn, .foot-contact{
     padding: 30px;
    }
+   .logo-header{
+    font-size: 1.2rem;
+   }
    .map{
     padding-left: 90px;
     padding-right: 90px;

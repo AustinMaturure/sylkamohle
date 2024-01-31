@@ -32,9 +32,9 @@
           font-size: 2rem;
         }
 
-        html {
+        body {
           overflow-x: hidden;
-          max-width: 100svw;
+        
       }
       
       .nav-links, .nav-link{

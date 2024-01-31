@@ -30,7 +30,7 @@ export default function ServiceDetail() {
     return (
         <>   <div>
         <nav className="navbarr"> 
-          <h2 className="logo-header">SYLKA MöHLE</h2>
+        <Link to="/"><h2 className="logo-header">SYLKA MöHLE</h2></Link>
          
           <ul className="nav-link">
           <li><Link to="/#services">Services</Link></li>

@@ -32,6 +32,9 @@ function Hero() {
   return (
     <>
       <Navbar></Navbar>
+      <title>Optometrist Piet Retief | Sylka Mohle Expert Eye Care Services</title>
+      <meta name="description" content="Enhance your vision with our expert optometrists in Piet Retief. We offer comprehensive eye care services, including prescription eye glasses, eye exams,  contact lenses, and more. Book an appointment now!" />
+
       <section className="hero" style={{backgroundImage:  `url(${skyImage})`}} >
 
       <div className="hero-title"> <h1 className='tag-line'>YOUR VISION, OUR EXPERTISE</h1>
@@ -132,7 +135,7 @@ function Hero() {
         <h1 className='wwo-about' id='wwo-about' ref={HeaderARef}>ABOUT US</h1>
         <div className='about-div'>
           <div className="about-image">
-            <img src={pexelsImage} alt="" srcset="" loading="lazy"/>
+            <img src={pexelsImage} loading="lazy"/>
           </div>
           <div className="about-text" >
           <h1 className='about-qa-head text-bubble left-triangle' ref={textBubbleRef}>
@@ -174,7 +177,7 @@ function Hero() {
        </div>
         
         <div className="contact-image-cnt">
-          <img className='contact-image' src={contactImage} alt="" srcset="" loading='lazy' />
+          <img className='contact-image' src={contactImage} alt="optometrist-piet retief holding glasses" loading='lazy' />
 
         </div>
       

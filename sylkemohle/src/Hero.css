@@ -5,7 +5,6 @@
   text-align: center; 
  
   
- 
 }
 .navbar {
   text-transform: uppercase;
@@ -484,7 +483,9 @@ transition: opacity 1.5s ease-in ;
 .about-div{
   display: grid;
   grid-template-columns: 40% 60%;
-  margin-top: 2rem;
+  margin-top: 2rem;width: 100vw;
+  width: 100svw;
+  
   
 }
 .about-image{
@@ -580,7 +581,6 @@ transition: opacity 1.5s ease-in ;
   margin: 10px;
   padding: 15px;
   border-radius: 40px;
-  
   font-size: 1.1rem;
   line-height: 1.4;
   filter: blur(25px);
@@ -894,4 +894,23 @@ transition: opacity 1.5s ease-in ;
 
   padding: 12px;
   border-radius: 12px;
+}
+
+.legal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  width: 100svw;
+  font-size: 14px;
+  font-family: 'Satoshi';
+  background-color: rgb(255, 255, 255);
+  z-index: 3;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.copy-right, .author{
+  margin: 0;
 }

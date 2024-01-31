@@ -2,8 +2,9 @@
   
   margin: 0 auto;
   max-width: 100svw;
-  text-align: center;
+  text-align: center; overflow-x: hidden;
   overflow-x: clip;
+ 
 }
 .navbar {
   text-transform: uppercase;

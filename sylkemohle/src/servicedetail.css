@@ -32,10 +32,7 @@
           font-size: 2rem;
         }
 
-        body {
-          overflow-x: hidden;
-        
-      }
+      
       
       .nav-links, .nav-link{
         gap: 1px;

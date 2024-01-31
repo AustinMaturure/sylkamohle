@@ -9,10 +9,10 @@ import guessLogo from '../assets/Guess_logo.svg';
 import poloLogo from '../assets/polo.svg';
 import pumaLogo from '../assets/puma.svg';
 import JeepLogo from '../assets/Jeep.svg';
-import eyeSun from '../assets/fraser-sun.webp';
+import eyeSun from '../assets/sunglass-bg-img-lg.webp';
 import brentoniLogo from '../assets/brentonr.svg';
 import annaLogo from '../assets/anna-hickmann.svg'
-import eye from '../assets/fraser-persc.webp';
+import eye from '../assets/perscription-bg-img-lg.webp';
 import eyeMobile from '../assets/no-sun-mobile.webp';
 import eyeSunMobile from '../assets/sun-mobile.webp';
 import './Hero.css';

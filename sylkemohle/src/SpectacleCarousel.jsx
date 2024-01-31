@@ -9,7 +9,7 @@ import guessLogo from '../assets/Guess_logo.svg';
 import poloLogo from '../assets/polo.svg';
 import pumaLogo from '../assets/puma.svg';
 import JeepLogo from '../assets/Jeep.svg';
-import eyeSun from '../assets/fraser-sun-mobile.webp';
+import eyeSun from '../assets/fraser-sun.webp';
 import brentoniLogo from '../assets/brentonr.svg';
 import annaLogo from '../assets/anna-hickmann.svg'
 import eye from '../assets/fraser-persc.webp';
@@ -33,7 +33,7 @@ const SpectacleCarousel = () => {
 
   const handleClick = () => {
    
-      setEyeImage((prevImage) => (prevImage == eye ? eyeSun : eye));
+      setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
       const log = document.querySelectorAll('.Logo-img');
       log.forEach((image, index) => {
         image.style.transition ='all 0.3s'
@@ -86,7 +86,7 @@ const SpectacleCarousel = () => {
         </div>
         <div className="pres-disc">
           <h1 className="pers-header" id="pers-head-disc" ref={presHRef}>
-            Need A Discount?
+            Need A Discount?{' '}
           </h1>
           <h3 className="pers-desc" id="pers-desc-disc" ref={presDRef}>
             Are you a Pensioner? Grab an eye test for only R400, and reading glasses from as low as R1000

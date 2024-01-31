@@ -2,8 +2,9 @@
   
   margin: 0 auto;
   max-width: 100svw;
-  text-align: center; overflow-x: hidden;
-  overflow-x: clip;
+  text-align: center; 
+ 
+  
  
 }
 .navbar {
@@ -732,6 +733,7 @@ transition: opacity 1.5s ease-in ;
   .hero{
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden !important;
    
     background-position: center;
   }
@@ -753,7 +755,7 @@ transition: opacity 1.5s ease-in ;
   }
 
   .foot-contact{
-    margin-left: 0px;
+    margin-left: 0px !important;
   }
 
 
@@ -832,12 +834,13 @@ transition: opacity 1.5s ease-in ;
 }
 
 .footer{
-  min-height: 16rem;
+  min-height: 100%;
   background-color: rgb(255, 255, 255);
   position: relative;
   font-family: 'satoshi', sans-serif;
   z-index: 3;
   display: grid;
+  overflow-x: hidden;
   grid-template-columns: 33% 33% 33%;
   align-items: center;
   border-top-right-radius: 22px;

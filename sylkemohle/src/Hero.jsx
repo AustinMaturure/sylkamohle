@@ -13,7 +13,6 @@ import useElementInView from './ElementInView';
 
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
-import servicesData from './servicesData.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
 

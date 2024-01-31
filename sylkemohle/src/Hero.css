@@ -510,6 +510,7 @@ transition: opacity 1.5s ease-in ;
   align-items: baseline;
   padding: 4px;
   margin-bottom: 40px;
+  min-width: 100%;
   gap: 4px;
 }
 .about-qa-head{

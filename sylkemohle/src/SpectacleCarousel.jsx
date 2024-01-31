@@ -12,7 +12,7 @@ import JeepLogo from '../assets/Jeep.svg';
 import eyeSun from '../assets/tinywow_fraser-sun-mobile-i_46550360.webp';
 import brentoniLogo from '../assets/brentonr.svg';
 import annaLogo from '../assets/anna-hickmann.svg'
-import eye from '../assets/tinywow_fraser-mobile_46550314';
+import eye from '../assets/tinywow_fraser-mobile_46550314.webp';
 import './Hero.css';
 import useElementInView from './ElementInView';
 

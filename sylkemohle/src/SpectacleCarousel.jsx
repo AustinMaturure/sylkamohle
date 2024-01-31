@@ -9,10 +9,10 @@ import guessLogo from '../assets/Guess_logo.svg';
 import poloLogo from '../assets/polo.svg';
 import pumaLogo from '../assets/puma.svg';
 import JeepLogo from '../assets/Jeep.svg';
-import eyeSun from '../assets/tinywow_fraser-sun-mobile-i_46550360.webp';
+import eyeSun from '../assets/fraser-sun.webp';
 import brentoniLogo from '../assets/brentonr.svg';
 import annaLogo from '../assets/anna-hickmann.svg'
-import eye from '../assets/tinywow_fraser-mobile_46550314.webp';
+import eye from '../assets/fraser-persc.webp';
 import './Hero.css';
 import useElementInView from './ElementInView';
 

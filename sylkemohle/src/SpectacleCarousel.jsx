@@ -30,13 +30,14 @@ const SpectacleCarousel = () => {
 
   useEffect(() => {
     const preloadImage = new Image();
-    preloadImage.src = eyeSun;
+    isMobile ? preloadImage.src = eyeSunMobile :  preloadImage.src = eyeSun ;
     preloadImage.onload = () => {
       setIsEyeSunLoaded(true);
     };
   }, []);
 
   const handleClick = () => {
+     eyeSunMobile
     isMobile ? setEyeImageMobile((prevImage) => (prevImage === eyeMobile ? eyeSunMobile : eyeMobile)) : setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
       const log = document.querySelectorAll('.Logo-img');
       log.forEach((image, index) => {

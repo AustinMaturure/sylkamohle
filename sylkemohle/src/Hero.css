@@ -903,7 +903,7 @@ transition: opacity 1.5s ease-in ;
   justify-content: center;
   gap: 2px;
   width: 100svw;
-  font-size: 14px;
+  font-size: 13px;
   font-family: 'Satoshi';
   background-color: rgb(255, 255, 255);
   z-index: 3;
@@ -914,3 +914,4 @@ transition: opacity 1.5s ease-in ;
 .copy-right, .author{
   margin: 0;
 }
+

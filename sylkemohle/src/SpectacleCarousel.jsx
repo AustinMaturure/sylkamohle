@@ -3,23 +3,21 @@ import React, { useState, useEffect} from 'react';
 import zeissLogo from '../assets/zeiss.svg';
 import bossLogo from '../assets/Boss.svg';
 import oakleyLogo from '../assets/Oakley.svg';
-import michaelkorsLogo from '../assets/Michael Kors.svg';
 import oceanLogo from '../assets/ocean.svg';
 import elleLogo from '../assets/elle.svg';
 import guessLogo from '../assets/Guess_logo.svg';
 import poloLogo from '../assets/polo.svg';
 import pumaLogo from '../assets/puma.svg';
 import JeepLogo from '../assets/Jeep.svg';
-import eyeSun from '../assets/fraser-sun.jpg';
+import eyeSun from '../assets/fraser-sun.webp';
 import brentoniLogo from '../assets/brentonr.svg';
 import annaLogo from '../assets/anna-hickmann.svg'
-import eye from '../assets/pexels-fraser-3048507.jpg';
+import eye from '../assets/fraser-persc.webp';
 import './Hero.css';
 import useElementInView from './ElementInView';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-const logos = [ JeepLogo, annaLogo,oceanLogo, zeissLogo, poloLogo,brentoniLogo, bossLogo, oakleyLogo, michaelkorsLogo, guessLogo, pumaLogo, elleLogo];
+
+const logos = [oakleyLogo, JeepLogo, annaLogo,oceanLogo, zeissLogo, poloLogo,brentoniLogo, bossLogo,  guessLogo, pumaLogo, elleLogo];
 
 const SpectacleCarousel = () => {
   const [isEyeSunLoaded, setIsEyeSunLoaded] = useState(false);
@@ -88,7 +86,7 @@ const SpectacleCarousel = () => {
         </div>
         <div className="pres-disc">
           <h1 className="pers-header" id="pers-head-disc" ref={presHRef}>
-            Need A Discount?{' '}
+            Need A Discount?
           </h1>
           <h3 className="pers-desc" id="pers-desc-disc" ref={presDRef}>
             Are you a Pensioner? Grab an eye test for only R400, and reading glasses from as low as R1000

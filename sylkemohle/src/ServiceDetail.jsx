@@ -28,7 +28,8 @@ export default function ServiceDetail() {
 
   
     return (
-        <>   <div>
+        <> <title>Optometrist Perscription Glasses and OCT exams Piet Retief</title>   
+        <div>
         <nav className="navbarr"> 
         <Link to="/"><h2 className="logo-header">SYLKA MöHLE</h2></Link>
          

@@ -44,8 +44,8 @@ function Hero() {
   return (
     <>
       <Navbar></Navbar>
-      <title>Optometrist Piet Retief | Sylka Mohle Expert Eye Care Services</title>
-      <meta name="description" content="Enhance your vision with our expert optometrists in Piet Retief. We offer comprehensive eye care services, including prescription eye glasses, eye exams,  contact lenses, and more. Book an appointment now!" />
+      
+      
 
       <section className="hero" style={{backgroundImage:  `url(${skyImage})`}} >
 

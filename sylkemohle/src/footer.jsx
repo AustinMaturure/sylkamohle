@@ -46,7 +46,7 @@ export default function Footer(){
         </div>
       
       </section>  <div className="legal">
-  <p className="copy-right">&copy; {new Date().getFullYear()} Sylka Möhle Optometrist. All rights reserved.</p>
+  <p className="copy-right">&copy; {new Date().getFullYear()} Sylka Möhle Optometrist Piet Retief. All rights reserved.</p>
   <p className="author">Designed and developed by <a href="https://austinmaturure.github.io/CV/" target="_blank" rel="noopener noreferrer">⚡</a></p>
 
 </div></>

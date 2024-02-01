@@ -8,13 +8,13 @@ import contactImage from '../assets/pexels-photo-5715892.webp';
 
 import SpectacleCarousel from './SpectacleCarousel';
 
-import React from 'react';
+import React, { useState } from 'react';
 import useElementInView from './ElementInView';
 
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowAltCircleRight, faClipboard, faCopy } from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight, faClipboard, faClipboardCheck, faCopy } from '@fortawesome/free-solid-svg-icons';
 
 function Hero() {
   
@@ -28,8 +28,9 @@ function Hero() {
  
 
   const phoneNumber = '+27178260308';
-
+  const [clicked, setClicked] = useState(false)
   const copyToClipboard = () => {
+    setClicked(true)
     navigator.clipboard.writeText(phoneNumber)
       .then(() => {
         console.log('Phone number copied to clipboard');
@@ -181,7 +182,7 @@ function Hero() {
           <h1 className='cta-contact'>Make a Appointment with an Expert</h1>
           <div className="c-info">
               <h3 className='call-contact' href="tel:+27178263435">(+27) 17 826 0308</h3>
-          <h3 className='book-contact' onClick={copyToClipboard} style={{ cursor: 'pointer'}}>CALL TO BOOK <FontAwesomeIcon icon ={faCopy}className='btn-copy' style={{ marginLeft:'8px',transition:'all 1s', color:'rgb(255, 255, 255)' }}></FontAwesomeIcon> </h3>
+          <h3 className='book-contact' onClick={copyToClipboard} style={{ cursor: 'pointer'}}>CALL TO BOOK <FontAwesomeIcon icon ={clicked ?  faClipboardCheck:faClipboard}className='btn-copy' style={{ marginLeft:'8px',transition:'all 1s', color:'rgb(255, 255, 255)' }}></FontAwesomeIcon> </h3>
           </div>
         
         </address>

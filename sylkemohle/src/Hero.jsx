@@ -14,7 +14,7 @@ import useElementInView from './ElementInView';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowAltCircleRight, faClipboard, faCopy } from '@fortawesome/free-solid-svg-icons';
 
 function Hero() {
   
@@ -27,6 +27,17 @@ function Hero() {
 
  
 
+  const phoneNumber = '+27178260308';
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(phoneNumber)
+      .then(() => {
+        console.log('Phone number copied to clipboard');
+      })
+      .catch((err) => {
+        console.error('Unable to copy to clipboard', err);
+      });
+    }
   
 
   return (
@@ -169,8 +180,8 @@ function Hero() {
         <address >
           <h1 className='cta-contact'>Make a Appointment with an Expert</h1>
           <div className="c-info">
-              <h3 className='call-contact' href="tel:+27178263435">(+27) 17 826 3435</h3>
-          <h3 className='book-contact' href="sylka@interkom.co.za">CALL TO BOOK</h3>
+              <h3 className='call-contact' href="tel:+27178263435">(+27) 17 826 0308</h3>
+          <h3 className='book-contact' onClick={copyToClipboard} style={{ cursor: 'pointer'}}>CALL TO BOOK <FontAwesomeIcon icon ={faCopy}className='btn-copy' style={{ marginLeft:'8px',transition:'all 1s', color:'rgb(255, 255, 255)' }}></FontAwesomeIcon> </h3>
           </div>
         
         </address>

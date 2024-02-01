@@ -843,10 +843,14 @@ transition: opacity 1.5s ease-in ;
   transition: all 1s;
 }
 
-.book-contact:hover{
+.book-contact:hover .btn-copy, .book-contact:hover {
   background-color: rgb(255, 255, 255);
-  color: #213547e3;
+  color: #213547e3 !important;
 }
+
+
+
+
 
 .footer{
   min-height: 16rem;

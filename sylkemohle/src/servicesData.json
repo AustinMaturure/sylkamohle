@@ -2,6 +2,7 @@
     "services": [
       {
         "id": "1",
+        "slug":"comprehensive-oct-eye-exams",
         "title": "Comprehensive OCT Exams",
         "price": "R 600.00",
         "description": [
@@ -17,6 +18,7 @@
       },
       {
         "id": "4",
+        "slug":"prescription-eyeglasses",
         "title": "Prescription Eyeglasses",
         "price": "from R1 300.00",
         "description": [

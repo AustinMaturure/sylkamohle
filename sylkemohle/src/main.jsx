@@ -11,7 +11,7 @@ const router = createBrowserRouter(
     createRoutesFromElements(
         <Route scrollToTop>
             <Route index element={<Hero />}></Route>
-            <Route path='services/:serviceId' element={<ServiceDetail />} />
+            <Route path='services/:serviceSlug' element={<ServiceDetail />} />
         </Route>
     )
 )

@@ -58,7 +58,7 @@ function Hero() {
          <div className="offer-content" id='services'>
          <h1 className='wwo-header' ref={HeaderRef} >OUR SERVICES</h1>
 <div className="grid-1" ref={serviceCardRef}>
-<Link to={`/services/1`}className='service-link'>
+<Link to={`/services/comprehensive-oct-eye-exams`}className='service-link'>
   <div className='service-card' id='card-1' >
     <h2 className='service-title'>Comprehensive OCT Exams</h2>
     <p className='service-price'>R599.00</p>
@@ -81,7 +81,7 @@ function Hero() {
     </div>
     <p className='service-description'  style={{marginTop:'0px' }}>
       Looking for a more discreet look? We provide contact lenses in 
-      a variety of colors , so you can look good with every outfit with 
+      a variety of colors, so you can look good with every outfit without 
       sacrificing your vision.
     </p>
   </div>
@@ -90,14 +90,14 @@ function Hero() {
     <h2 className='service-title'>Dilated Eye Exam</h2>
     <p className='service-price'>R200.00</p>
     <p className='service-description'>
-      Providing Cataract Screening as well as dialted eye exams.
+      Providing Dilated eye exams as well as Cataract Screening .
       Addressing issues such as eye coordination and focusing problems.
     </p>
   </div>
 
 </div>
 
-<div className="grid-2"><Link to={`/services/4`}className='service-link'>
+<div className="grid-2"><Link to={`/services/prescription-eyeglasses`}className='service-link'>
   <div className='service-card' id='card-4'>
     <h2 className='service-title' style={{marginBottom:'0px' }}>Prescription Eyeglasses</h2>
     <div style={{display:'flex', alignItems:'center', gap:'10px', padding:'0px'}}className='price-container'>
@@ -108,7 +108,7 @@ function Hero() {
       Conducting eye exams to prescribe corrective lenses.
       Assisting in selecting eyeglass frames and fitting contact lenses.
       With our wide range of well-known brands we ensure you not only see great
-        but look great too
+        but look great too.
     </p>
      <div className="arrow-cnt">
    <div><p className='rd-mre'>read more</p>
@@ -123,9 +123,9 @@ function Hero() {
         <p className='service-price' >R1 300.00</p>
     </div>
     <p className='service-description'style={{marginTop:'0px' }}>
-        Choose from a variety of polarized/sunglass brands , or turn 
+        Choose from a variety of polarized/sunglass brands, or turn 
         Your own frame into sunglasses, combining the best of style, comfort and 
-        protection
+        protection.
     </p>
   </div>
  
@@ -134,8 +134,8 @@ function Hero() {
     <h2 className='service-title'>Driver's Test</h2>
     <p className='service-price'>R50.00</p>
     <p className='service-description'>
-      Providing exercises and activities to improve visual skills.
-      Addressing issues such as eye coordination and focusing problems.
+      Providing necessary eye test results needed for both 
+      writing the Learners Liscence test and Drivers test.
     </p>
   </div>
 </div>
@@ -146,8 +146,8 @@ function Hero() {
  <section className='about-section' id='about-us'>
         <h1 className='wwo-about' id='wwo-about' ref={HeaderARef}>ABOUT US</h1>
         <div className='about-div'>
-          <div className="about-image">
-            <img src={pexelsImage} loading="lazy"/>
+          <div className="about-image"style={{height: "30rem", width: "33rem"}}>
+            <img src={pexelsImage} loading="lazy" style={{ maxHeight:"100%",maxWidth:"100%"}}/>
           </div>
           <div className="about-text" >
           <h1 className='about-qa-head text-bubble left-triangle' ref={textBubbleRef}>
@@ -189,7 +189,7 @@ function Hero() {
        </div>
         
         <div className="contact-image-cnt">
-          <img className='contact-image' src={contactImage} alt="optometrist-piet retief holding glasses" loading='lazy' />
+          <img className='contact-image' style={{maxWidth: "100%"}} src={contactImage} alt="optometrist piet retief holding glasses" loading='lazy' />
 
         </div>
       

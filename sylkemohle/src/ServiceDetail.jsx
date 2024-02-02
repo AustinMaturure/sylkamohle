@@ -18,9 +18,9 @@ export default function ServiceDetail() {
     window.scrollTo(0, 0); // Scroll to the top when the component mounts
   }, []);
 
-    const { serviceId } = useParams();
+    const { serviceSlug } = useParams();
   
-    const service = serviceData.services.find(service => service.id == serviceId);
+    const service = serviceData.services.find(service => service.slug == serviceSlug);
   
     if (!service) {
       return <div>Service not found</div>;
@@ -45,7 +45,7 @@ export default function ServiceDetail() {
       </div> {console.log(serviceData.services)}
             <div className="service-detail-cnt">
                 <div className="service-illustration">
-                            <img src={serviceId == 4 ? spec : oct} alt="perscription-eyeglasses-piet-retief" className="serv-pic" loading="lazy"/>
+                            <img src={serviceSlug == "prescription-eyeglasses" ? spec : oct} alt="perscription-eyeglasses-piet-retief" style={{maxWidth: "100%"}}className="serv-pic" loading="lazy"/>
 
                         </div>
                         <div className="service-descrption" key={service.id}>

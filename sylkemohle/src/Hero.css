@@ -6,6 +6,13 @@
  
   
 }
+
+.opt-p{
+  font-size: 9px;
+  padding: 0px;
+  margin: 0px;
+ 
+}
 .navbar {
   text-transform: uppercase;
   color: rgb(255, 255, 255);
@@ -489,15 +496,13 @@ transition: opacity 1.5s ease-in ;
   
 }
 .about-image{
-  height: 30rem;
-  width: 33rem;
+
   border-radius: 8px;
   align-self: center;
 }
 
 .about-image img{
-  max-height:100%;
-  max-width:100%;
+ 
   border-radius: 8px;
   box-shadow:  5px 5px 6px #d9d9d9,
   -5px -5px 6px #e7e7e7;
@@ -790,11 +795,12 @@ transition: opacity 1.5s ease-in ;
 
 .contact-image-ctn{
   align-self: center;
+  
  
   
 }
 .contact-image{
-  max-width: 100%;
+  
   border-radius: 22px;
   align-self: center;
   box-shadow:  2px 2px 6px hsl(0, 0%, 85%),

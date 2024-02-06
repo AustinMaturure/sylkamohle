@@ -31,7 +31,7 @@ export default function Footer(){
         <h3>
    
         
-        <FontAwesomeIcon icon={faLocation} className="clock-icon"/>3 Alfa Bulding, 11a Retief St Piet Retief</h3>
+        <FontAwesomeIcon icon={faLocation} className="clock-icon"/>3 Alfa Building, 11a Retief St Piet Retief</h3>
 <div className='opening-times'>
   <div>
     <h3>MON - FRI</h3>

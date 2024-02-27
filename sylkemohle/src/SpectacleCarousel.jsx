@@ -38,7 +38,7 @@ const SpectacleCarousel = () => {
 
   const handleClick = () => {
      eyeSunMobile
-    isMobile ? setEyeImageMobile((prevImage) => (prevImage === eyeMobile ? eyeSunMobile : eyeMobile)) : setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
+     isMobile ? setEyeImageMobile((prevImage) => (prevImage === eyeMobile ? eyeSunMobile : eyeMobile)) : setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
       const log = document.querySelectorAll('.Logo-img');
       log.forEach((image, index) => {
         image.style.transition ='all 0.3s'
@@ -55,7 +55,7 @@ const SpectacleCarousel = () => {
   const presDRef = useElementInView('#pers-desc-disc');
 
   return (
-    <section className="spectacle-section"  style={{ backgroundImage: `url(${isMobile ? eyeImageMobile:eyeImage})` }}>
+    <section className="spectacle-section" style={{ backgroundImage: `url(${isMobile ? eyeImageMobile:eyeImage})` }}>
       <>
         <h1 className="pers-header" ref={persHRef}>
           Need A Prescription?

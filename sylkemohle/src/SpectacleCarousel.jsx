@@ -34,7 +34,7 @@ const SpectacleCarousel = () => {
     preloadImage.onload = () => {
       setIsEyeSunLoaded(true);
     };
-  }, [isEyeSunLoaded]);
+  }, []);
 
   const handleClick = () => {
     if (isEyeSunLoaded) {

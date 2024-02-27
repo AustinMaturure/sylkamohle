@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faServicestack, faWhatsapp, faWhatsappSquare } from '@fortawesome/free-brands-svg-icons';
-import { faLocation, faMessage, faPhone, faTextSlash } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLocation, faMessage, faPhone, faTextSlash } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Footer(){
@@ -28,7 +28,7 @@ export default function Footer(){
 </div>
         <div className="foot-contact">
           <h3 className='call-whatsapp'> <FontAwesomeIcon icon={faMessage} className="clock-icon"/>(+27) 82 554 2925</h3>
-        <h3 className='foot-call-contact'> <FontAwesomeIcon icon={faPhone} className="clock-icon"/> (+27) 17 826 3435</h3>
+        <h3 className='foot-call-contact'> <FontAwesomeIcon icon={faEnvelope} className="clock-icon"/>sylkamohle@intekom.co.za</h3>
         <h3>
    
         

@@ -10,6 +10,7 @@ import SpectacleCarousel from './SpectacleCarousel';
 
 import React, { useState } from 'react';
 import useElementInView from './ElementInView';
+
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

@@ -11,6 +11,8 @@ import SpectacleCarousel from './SpectacleCarousel';
 import React, { useState } from 'react';
 import useElementInView from './ElementInView';
 
+  import contactImage from '../assets/pexels-photo-5715892.webp';
+
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -24,7 +26,8 @@ function Hero() {
   const contactImageRef = useElementInView('.contact-image');
   const HeaderRef = useElementInView('.wwo-header');
   const HeaderARef = useElementInView('.wwo-about');
-
+  const isMobile = window.innerWidth <= 768;
+ 
  
 
   const phoneNumber = '+27178260308';

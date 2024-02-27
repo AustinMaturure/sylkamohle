@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
-
+import eyeMobile from '../assets/no-sun-mobile.webp';
+import eyeSunMobile from '../assets/sun-mobile.webp';
 import zeissLogo from '../assets/zeiss.svg';
 import bossLogo from '../assets/Boss.svg';
 import oakleyLogo from '../assets/Oakley.svg';
@@ -13,8 +14,7 @@ import eyeSun from '../assets/sunglass-bg-img-lg.webp';
 import brentoniLogo from '../assets/brentonr.svg';
 import annaLogo from '../assets/anna-hickmann.svg'
 import eye from '../assets/perscription-bg-img-lg.webp';
-import eyeMobile from '../assets/no-sun-mobile.webp';
-import eyeSunMobile from '../assets/sun-mobile.webp';
+
 import './Hero.css';
 import useElementInView from './ElementInView';
 

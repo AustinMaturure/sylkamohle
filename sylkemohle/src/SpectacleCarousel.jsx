@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import eyeMobile from '../assets/no-sun-mobile.webp';
 import eyeSunMobile from '../assets/sun-mobile.webp';
 import zeissLogo from '../assets/zeiss.svg';
@@ -18,12 +18,14 @@ import eye from '../assets/perscription-bg-img-lg.webp';
 import './Hero.css';
 import useElementInView from './ElementInView';
 
-const logos = [oakleyLogo, JeepLogo, annaLogo, oceanLogo, zeissLogo, poloLogo, brentoniLogo, bossLogo,  guessLogo, pumaLogo, elleLogo];
+const logos = [oakleyLogo, JeepLogo, annaLogo, oceanLogo, zeissLogo, poloLogo, brentoniLogo, bossLogo, guessLogo, pumaLogo, elleLogo];
 
 const SpectacleCarousel = () => {
   const [isEyeSunLoaded, setIsEyeSunLoaded] = useState(false);
   const [eyeImage, setEyeImage] = useState(eye);
+  const [nextEyeImage, setNextEyeImage] = useState(null);
   const [eyeImageMobile, setEyeImageMobile] = useState(eyeMobile);
+  const [nextEyeImageMobile, setNextEyeImageMobile] = useState(null);
   const isMobile = window.innerWidth <= 768;
 
   useEffect(() => {
@@ -40,17 +42,27 @@ const SpectacleCarousel = () => {
     preloadEyeSunMobile.src = eyeSunMobile;
   }, []);
 
-  const handleClick = () => {
+  useEffect(() => {
     if (isMobile) {
-      setEyeImageMobile((prevImage) => (prevImage === eyeMobile ? eyeSunMobile : eyeMobile));
+      setNextEyeImageMobile(eyeSunMobile);
     } else {
-      setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
+      setNextEyeImage(eyeSun);
     }
-    const log = document.querySelectorAll('.Logo-img');
-    log.forEach((image, index) => {
-      image.style.transition = 'all 0.3s';
-      image.style.filter = 'brightness(0) invert(1)';
-    });
+  }, [isMobile]);
+
+  const handleClick = () => {
+    if (isEyeSunLoaded) {
+      if (isMobile) {
+        setEyeImageMobile(nextEyeImageMobile);
+      } else {
+        setEyeImage(nextEyeImage);
+      }
+      const log = document.querySelectorAll('.Logo-img');
+      log.forEach((image, index) => {
+        image.style.transition = 'all 0.3s';
+        image.style.filter = 'brightness(0) invert(1)';
+      });
+    }
   };
 
   const persHRef = useElementInView('.pers-header');
@@ -59,7 +71,7 @@ const SpectacleCarousel = () => {
   const presDRef = useElementInView('#pers-desc-disc');
 
   return (
-    <section className="spectacle-section" style={{ backgroundImage: `url(${isMobile ? eyeImageMobile:eyeImage})` }}>
+    <section className="spectacle-section" style={{ backgroundImage: `url(${isMobile ? eyeImageMobile : eyeImage})` }}>
       <>
         <h1 className="pers-header" ref={persHRef}>
           Need A Prescription?

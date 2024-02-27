@@ -927,7 +927,3 @@ transition: opacity 1.5s ease-in ;
 .copy-right, .author{
   margin: 0;
 }
-
-.Logo-img.sun-mode {
-  filter: brightness(0) invert(1);
-}

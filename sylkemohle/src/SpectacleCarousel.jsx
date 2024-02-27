@@ -31,28 +31,23 @@ const SpectacleCarousel = () => {
   useEffect(() => {
     const preloadImage = new Image();
     isMobile ? preloadImage.src = eyeSunMobile :  preloadImage.src = eyeSun ;
+    
     preloadImage.onload = () => {
       setIsEyeSunLoaded(true);
+      setEyeImage(preloadImage)
     };
   }, []);
 
   const handleClick = () => {
-    if (isEyeSunLoaded) {
-      // Determine which image to set based on the current state
-      const newEyeImage = isMobile ? eyeSunMobile : eyeSun;
-      const newEyeImageMobile = isMobile ? eyeMobile : eye;
-      
-      // Set the state based on the current state
-      setEyeImage(prevImage => (prevImage === eye ? newEyeImage : eye));
-      setEyeImageMobile(prevImage => (prevImage === eyeMobile ? newEyeImageMobile : eyeMobile));
-      
-      // Modify the brightness for all logo images
-      const logos = document.querySelectorAll('.Logo-img');
-      logos.forEach(image => {
-        image.style.transition = 'all 0.3s';
+     
+    isMobile ? setEyeImageMobile((prevImage) => (prevImage === eyeMobile ? eyeSunMobile : eyeMobile)) : setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
+      const log = document.querySelectorAll('.Logo-img');
+      log.forEach((image, index) => {
+        image.style.transition ='all 0.3s'
         image.style.filter = 'brightness(0) invert(1)';
+        
       });
-    }
+    
   };
   
 

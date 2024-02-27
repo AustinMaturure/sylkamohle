@@ -57,6 +57,8 @@ const SpectacleCarousel = () => {
   return (
     <section className="spectacle-section" style={{ backgroundImage: `url(${isMobile ? eyeImageMobile:eyeImage})` }}>
       <>
+      {isMobile? 
+      <img src={eyeSunMobile} style={{height:"0px" ,width:"0px"}} alt="" />:<img src={eyeSun} style={{height:"0px" ,width:"0px"}} alt="" />}
         <h1 className="pers-header" ref={persHRef}>
           Need A Prescription?
         </h1>

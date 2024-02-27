@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import eyeMobile from '../assets/no-sun-mobile.webp';
 import eyeSunMobile from '../assets/sun-mobile.webp';
 import zeissLogo from '../assets/zeiss.svg';
@@ -19,54 +19,33 @@ import './Hero.css';
 import useElementInView from './ElementInView';
 
 
-const logos = [oakleyLogo, JeepLogo, annaLogo,oceanLogo, zeissLogo, poloLogo,brentoniLogo, bossLogo,  guessLogo, pumaLogo, elleLogo];
+const logos = [oakleyLogo, JeepLogo, annaLogo, oceanLogo, zeissLogo, poloLogo, brentoniLogo, bossLogo, guessLogo, pumaLogo, elleLogo];
 
 const SpectacleCarousel = () => {
-  const [isEyeSunLoaded, setIsEyeSunLoaded] = useState(false);
-  const [isEyeSunMobileLoaded, setIsEyeSunMobileLoaded] = useState(false);
   const [isSunMode, setIsSunMode] = useState(false);
-  const [eyeImage, setEyeImage] = useState(eye);
-  const [eyeImageMobile, setEyeImageMobile] = useState(eyeMobile);
-
-  const isMobile = window.innerWidth <= 768;
 
   useEffect(() => {
+    // Preload images
     const preloadEyeSun = new Image();
-    const preloadEyeSunMobile = new Image();
-
-    preloadEyeSun.onload = () => {
-      setIsEyeSunLoaded(true);
-    };
     preloadEyeSun.src = eyeSun;
 
-    preloadEyeSunMobile.onload = () => {
-      setIsEyeSunMobileLoaded(true);
-    };
+    const preloadEyeSunMobile = new Image();
     preloadEyeSunMobile.src = eyeSunMobile;
   }, []);
 
   const handleClick = () => {
     setIsSunMode(prevMode => !prevMode);
-    const log = document.querySelectorAll('.Logo-img');
-    log.forEach((image, index) => {
-      image.style.transition ='all 0.3s'
-      image.style.filter = 'brightness(0) invert(1)';
-      
+    const logos = document.querySelectorAll('.Logo-img');
+    logos.forEach((logo) => {
+      logo.classList.toggle('sun-mode');
     });
   };
 
-  useEffect(() => {
-    if (isSunMode) {
-      setEyeImageMobile(eyeSunMobile);
-      setEyeImage(eyeSun);
-    } else {
-      setEyeImageMobile(eyeMobile);
-      setEyeImage(eye);
-    }
-  }, [isSunMode]);
-
   return (
-    <section className="spectacle-section" style={{ backgroundImage: `url(${isMobile ? eyeImageMobile : eyeImage})` }}>
+    <section className="spectacle-section">
+      <div className="bg-images">
+        {isSunMode ? <img src={eyeSun} alt="Sun Mode Background" /> : <img src={eyeMobile} alt="Default Background" />}
+      </div>
       <h1 className="pers-header" ref={useElementInView('.pers-header')}>
         Need A Prescription?
       </h1>
@@ -110,4 +89,3 @@ const SpectacleCarousel = () => {
 };
 
 export default SpectacleCarousel;
-

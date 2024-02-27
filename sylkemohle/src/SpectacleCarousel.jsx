@@ -43,7 +43,7 @@ const SpectacleCarousel = () => {
 
   return (
     <section className="spectacle-section">
-      <div className="bg-images">
+      <div className={`bg-images ${isSunMode ? 'sun-mode' : ''}`}>
         {isSunMode ? <img src={eyeSun} alt="Sun Mode Background" /> : <img src={eyeMobile} alt="Default Background" />}
       </div>
       <h1 className="pers-header" ref={useElementInView('.pers-header')}>

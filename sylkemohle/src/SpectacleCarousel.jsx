@@ -57,8 +57,6 @@ const SpectacleCarousel = () => {
   return (
     <section className="spectacle-section" style={{ backgroundImage: `url(${isMobile ? eyeImageMobile:eyeImage})` }}>
       <>
-      {isMobile? 
-      <img src={eyeSunMobile} style={{height:"0px" ,width:"0px"}} alt="" />:<img src={eyeSunMobile} style={{height:"0px" ,width:"0px"}} alt="" />}
         <h1 className="pers-header" ref={persHRef}>
           Need A Prescription?
         </h1>
@@ -105,8 +103,3 @@ const SpectacleCarousel = () => {
 };
 
 export default SpectacleCarousel;
-log.forEach((image, index) => {
-  image.style.transition ='all 0.3s'
-  image.style.filter = 'brightness(0) invert(1)';
-  
-});

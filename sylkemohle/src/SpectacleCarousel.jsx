@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect} from 'react';
 import eyeMobile from '../assets/no-sun-mobile.webp';
 import eyeSunMobile from '../assets/sun-mobile.webp';
 import zeissLogo from '../assets/zeiss.svg';
@@ -12,58 +12,42 @@ import pumaLogo from '../assets/puma.svg';
 import JeepLogo from '../assets/Jeep.svg';
 import eyeSun from '../assets/sunglass-bg-img-lg.webp';
 import brentoniLogo from '../assets/brentonr.svg';
-import annaLogo from '../assets/anna-hickmann.svg';
+import annaLogo from '../assets/anna-hickmann.svg'
 import eye from '../assets/perscription-bg-img-lg.webp';
 
 import './Hero.css';
 import useElementInView from './ElementInView';
 
-const logos = [oakleyLogo, JeepLogo, annaLogo, oceanLogo, zeissLogo, poloLogo, brentoniLogo, bossLogo, guessLogo, pumaLogo, elleLogo];
+
+const logos = [oakleyLogo, JeepLogo, annaLogo,oceanLogo, zeissLogo, poloLogo,brentoniLogo, bossLogo,  guessLogo, pumaLogo, elleLogo];
 
 const SpectacleCarousel = () => {
   const [isEyeSunLoaded, setIsEyeSunLoaded] = useState(false);
   const [eyeImage, setEyeImage] = useState(eye);
-  const [nextEyeImage, setNextEyeImage] = useState(null);
   const [eyeImageMobile, setEyeImageMobile] = useState(eyeMobile);
-  const [nextEyeImageMobile, setNextEyeImageMobile] = useState(null);
+ 
   const isMobile = window.innerWidth <= 768;
 
   useEffect(() => {
-    const preloadEyeSun = new Image();
-    preloadEyeSun.onload = () => {
+    const preloadImage = new Image();
+    isMobile ? preloadImage.src = eyeSunMobile :  preloadImage.src = eyeSun ;
+    preloadImage.onload = () => {
       setIsEyeSunLoaded(true);
     };
-    preloadEyeSun.src = eyeSun;
-
-    const preloadEyeSunMobile = new Image();
-    preloadEyeSunMobile.onload = () => {
-      setIsEyeSunLoaded(true);
-    };
-    preloadEyeSunMobile.src = eyeSunMobile;
   }, []);
 
-  useEffect(() => {
-    if (isMobile) {
-      setNextEyeImageMobile(eyeSunMobile);
-    } else {
-      setNextEyeImage(eyeSun);
-    }
-  }, [isMobile]);
-
   const handleClick = () => {
-    if (isEyeSunLoaded) {
-      if (isMobile) {
-        setEyeImageMobile(nextEyeImageMobile);
-      } else {
-        setEyeImage(nextEyeImage);
-      }
+     if (isEyeSunLoaded){
+     isMobile ? setEyeImageMobile((prevImage) => (prevImage === eyeMobile ? eyeSunMobile : eyeMobile)) : setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
       const log = document.querySelectorAll('.Logo-img');
       log.forEach((image, index) => {
-        image.style.transition = 'all 0.3s';
+        image.style.transition ='all 0.3s'
         image.style.filter = 'brightness(0) invert(1)';
-      });
-    }
+        
+      });}
+    
   };
+  
 
   const persHRef = useElementInView('.pers-header');
   const persDRef = useElementInView('.pers-desc');
@@ -71,7 +55,7 @@ const SpectacleCarousel = () => {
   const presDRef = useElementInView('#pers-desc-disc');
 
   return (
-    <section className="spectacle-section" style={{ backgroundImage: `url(${isMobile ? eyeImageMobile : eyeImage})` }}>
+    <section className="spectacle-section" style={{ backgroundImage: `url(${isMobile ? eyeImageMobile:eyeImage})` }}>
       <>
         <h1 className="pers-header" ref={persHRef}>
           Need A Prescription?
@@ -88,18 +72,20 @@ const SpectacleCarousel = () => {
             <button className="try-it-btn" onClick={handleClick}>
               TRY IT
             </button>
+              
           </h3>
         </div>
 
         <div className="carousel-container">
           <div className="carousel-inner">
+           
             {logos.map((logo, index) => (
-              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Eyewear brand ${index + 1}`} />
+              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Eyeware brand ${index + 1}`} />
             ))}
           </div>
           <div className="carousel-inner">
             {logos.map((logo, index) => (
-              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Eyewear brand ${index + 1}`} />
+              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Eyeware brand ${index + 1}`} />
             ))}
           </div>
         </div>

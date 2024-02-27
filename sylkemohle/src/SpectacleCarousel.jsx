@@ -27,30 +27,30 @@ const SpectacleCarousel = () => {
   const isMobile = window.innerWidth <= 768;
 
   useEffect(() => {
-    const preloadImage = new Image();
-    preloadImage.onload = () => {
+    const preloadEyeSun = new Image();
+    preloadEyeSun.onload = () => {
       setIsEyeSunLoaded(true);
     };
-    if (isMobile) {
-      preloadImage.src = eyeSunMobile;
-    } else {
-      preloadImage.src = eyeSun;
-    }
-  }, [isMobile]);
+    preloadEyeSun.src = eyeSun;
+
+    const preloadEyeSunMobile = new Image();
+    preloadEyeSunMobile.onload = () => {
+      setIsEyeSunLoaded(true);
+    };
+    preloadEyeSunMobile.src = eyeSunMobile;
+  }, []);
 
   const handleClick = () => {
-    if (isEyeSunLoaded) {
-      if (isMobile) {
-        setEyeImageMobile((prevImage) => (prevImage === eyeMobile ? eyeSunMobile : eyeMobile));
-      } else {
-        setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
-      }
-      const log = document.querySelectorAll('.Logo-img');
-      log.forEach((image, index) => {
-        image.style.transition = 'all 0.3s';
-        image.style.filter = 'brightness(0) invert(1)';
-      });
+    if (isMobile) {
+      setEyeImageMobile((prevImage) => (prevImage === eyeMobile ? eyeSunMobile : eyeMobile));
+    } else {
+      setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
     }
+    const log = document.querySelectorAll('.Logo-img');
+    log.forEach((image, index) => {
+      image.style.transition = 'all 0.3s';
+      image.style.filter = 'brightness(0) invert(1)';
+    });
   };
 
   const persHRef = useElementInView('.pers-header');
@@ -82,12 +82,12 @@ const SpectacleCarousel = () => {
         <div className="carousel-container">
           <div className="carousel-inner">
             {logos.map((logo, index) => (
-              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Eyeware brand ${index + 1}`} />
+              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Eyewear brand ${index + 1}`} />
             ))}
           </div>
           <div className="carousel-inner">
             {logos.map((logo, index) => (
-              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Eyeware brand ${index + 1}`} />
+              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Eyewear brand ${index + 1}`} />
             ))}
           </div>
         </div>

@@ -10,9 +10,6 @@ import SpectacleCarousel from './SpectacleCarousel';
 
 import React, { useState } from 'react';
 import useElementInView from './ElementInView';
-
-  import contactImage from '../assets/pexels-photo-5715892.webp';
-
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

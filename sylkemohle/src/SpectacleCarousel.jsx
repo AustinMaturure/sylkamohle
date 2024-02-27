@@ -12,52 +12,46 @@ import pumaLogo from '../assets/puma.svg';
 import JeepLogo from '../assets/Jeep.svg';
 import eyeSun from '../assets/sunglass-bg-img-lg.webp';
 import brentoniLogo from '../assets/brentonr.svg';
-import annaLogo from '../assets/anna-hickmann.svg'
+import annaLogo from '../assets/anna-hickmann.svg';
 import eye from '../assets/perscription-bg-img-lg.webp';
 
 import './Hero.css';
 import useElementInView from './ElementInView';
 
-
-const logos = [oakleyLogo, JeepLogo, annaLogo,oceanLogo, zeissLogo, poloLogo,brentoniLogo, bossLogo,  guessLogo, pumaLogo, elleLogo];
+const logos = [oakleyLogo, JeepLogo, annaLogo, oceanLogo, zeissLogo, poloLogo, brentoniLogo, bossLogo,  guessLogo, pumaLogo, elleLogo];
 
 const SpectacleCarousel = () => {
   const [isEyeSunLoaded, setIsEyeSunLoaded] = useState(false);
   const [eyeImage, setEyeImage] = useState(eye);
   const [eyeImageMobile, setEyeImageMobile] = useState(eyeMobile);
- 
   const isMobile = window.innerWidth <= 768;
 
   useEffect(() => {
     const preloadImage = new Image();
-    isMobile ? preloadImage.src = eyeSunMobile :  preloadImage.src = eyeSun ;
     preloadImage.onload = () => {
       setIsEyeSunLoaded(true);
     };
-  }, []);
+    if (isMobile) {
+      preloadImage.src = eyeSunMobile;
+    } else {
+      preloadImage.src = eyeSun;
+    }
+  }, [isMobile]);
 
   const handleClick = () => {
-    if (isMobile) {
-      if (isEyeSunLoaded) {
+    if (isEyeSunLoaded) {
+      if (isMobile) {
         setEyeImageMobile((prevImage) => (prevImage === eyeMobile ? eyeSunMobile : eyeMobile));
-        const log = document.querySelectorAll('.Logo-img');
-        log.forEach((image, index) => {
-          image.style.transition = 'all 0.3s';
-          image.style.filter = 'brightness(0) invert(1)';
-        });
-      }
-    } else {
-      if (isEyeSunLoaded) {
+      } else {
         setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
-        const log = document.querySelectorAll('.Logo-img');
-        log.forEach((image, index) => {
-          image.style.transition = 'all 0.3s';
-          image.style.filter = 'brightness(0) invert(1)';
-        });
       }
+      const log = document.querySelectorAll('.Logo-img');
+      log.forEach((image, index) => {
+        image.style.transition = 'all 0.3s';
+        image.style.filter = 'brightness(0) invert(1)';
+      });
     }
   };
-  
 
   const persHRef = useElementInView('.pers-header');
   const persDRef = useElementInView('.pers-desc');
@@ -82,13 +76,11 @@ const SpectacleCarousel = () => {
             <button className="try-it-btn" onClick={handleClick}>
               TRY IT
             </button>
-              
           </h3>
         </div>
 
         <div className="carousel-container">
           <div className="carousel-inner">
-           
             {logos.map((logo, index) => (
               <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Eyeware brand ${index + 1}`} />
             ))}

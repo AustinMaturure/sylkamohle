@@ -81,7 +81,7 @@ function Hero() {
     </div>
     <p className='service-description'  style={{marginTop:'0px' }}>
       Looking for a more discreet look? We provide contact lenses in 
-      a variety of colors, so you can look good with every outfit without 
+      a variety of colors, so you can look good at every occasion, without 
       sacrificing your vision.
     </p>
   </div>
@@ -107,7 +107,7 @@ function Hero() {
     <p className='service-description' style={{marginTop:'0px' }}>
       Conducting eye exams to prescribe corrective lenses.
       Assisting in selecting eyeglass frames and fitting contact lenses.
-      With our wide range of well-known brands we ensure you not only see great
+      With our wide range of well-known brands we ensure you not only see great,
         but look great too.
     </p>
      <div className="arrow-cnt">

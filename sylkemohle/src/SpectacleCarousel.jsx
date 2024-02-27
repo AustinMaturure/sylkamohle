@@ -1,4 +1,4 @@
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import eyeMobile from '../assets/no-sun-mobile.webp';
 import eyeSunMobile from '../assets/sun-mobile.webp';
 import zeissLogo from '../assets/zeiss.svg';
@@ -19,89 +19,88 @@ import './Hero.css';
 import useElementInView from './ElementInView';
 
 
-const logos = [oakleyLogo, JeepLogo, annaLogo,oceanLogo, zeissLogo, poloLogo,brentoniLogo, bossLogo,  guessLogo, pumaLogo, elleLogo];
+const logos = [oakleyLogo, JeepLogo, annaLogo, oceanLogo, zeissLogo, poloLogo, brentoniLogo, bossLogo, guessLogo, pumaLogo, elleLogo];
 
 const SpectacleCarousel = () => {
-  const [isEyeSunLoaded, setIsEyeSunLoaded] = useState(false);
-  const [eyeImage, setEyeImage] = useState(eye);
-  const [eyeImageMobile, setEyeImageMobile] = useState(eyeMobile);
- 
+  const [isSunMode, setIsSunMode] = useState(false);
+  const [showEyeSunMobile, setShowEyeSunMobile] = useState(false);
+  const [showEyeSun, setShowEyeSun] = useState(false);
+
   const isMobile = window.innerWidth <= 768;
 
   useEffect(() => {
-    const preloadImage = new Image();
-    isMobile ? preloadImage.src = eyeSunMobile :  preloadImage.src = eyeSun ;
-    preloadImage.onload = () => {
-      setIsEyeSunLoaded(true);
+    const preloadImages = () => {
+      const imgSunMobile = new Image();
+      imgSunMobile.src = eyeSunMobile;
+      imgSunMobile.onload = () => setShowEyeSunMobile(true);
+
+      const imgSun = new Image();
+      imgSun.src = eyeSun;
+      imgSun.onload = () => setShowEyeSun(true);
     };
+
+    preloadImages();
   }, []);
 
   const handleClick = () => {
-     eyeSunMobile
-     isMobile ? setEyeImageMobile((prevImage) => (prevImage === eyeMobile ? eyeSunMobile : eyeMobile)) : setEyeImage((prevImage) => (prevImage === eye ? eyeSun : eye));
-      const log = document.querySelectorAll('.Logo-img');
-      log.forEach((image, index) => {
-        image.style.transition ='all 0.3s'
-        image.style.filter = 'brightness(0) invert(1)';
-        
-      });
-    
-  };
-  
+    setIsSunMode(prevMode => !prevMode);
 
-  const persHRef = useElementInView('.pers-header');
-  const persDRef = useElementInView('.pers-desc');
-  const presHRef = useElementInView('#pers-head-disc');
-  const presDRef = useElementInView('#pers-desc-disc');
+log.forEach((image, index) => {
+  image.style.transition ='all 0.3s'
+  image.style.filter = 'brightness(0) invert(1)';
+  
+});
+  };
 
   return (
-    <section className="spectacle-section" style={{ backgroundImage: `url(${isMobile ? eyeImageMobile:eyeImage})` }}>
-      <>
-      {isMobile? 
-      <img src={eyeSunMobile} style={{height:"0px" ,width:"0px"}} alt="" />:<img src={eyeSunMobile} style={{height:"0px" ,width:"0px"}} alt="" />}
-        <h1 className="pers-header" ref={persHRef}>
-          Need A Prescription?
+    <section className="spectacle-section">
+      <div className="bg-images">
+        {showEyeSunMobile && isMobile && isSunMode && <img src={eyeSunMobile} alt="Sun Mode Background" />}
+        {showEyeSun && !isMobile && isSunMode && <img src={eyeSun} alt="Sun Mode Background" />}
+        {!isSunMode && <img src={isMobile ? eyeMobile : eye} alt="Default Background" />}
+      </div>
+      <h1 className="pers-header" ref={useElementInView('.pers-header')}>
+        Need A Prescription?
+      </h1>
+      <h3 className="pers-desc" ref={useElementInView('.pers-desc')}>
+        No matter the Budget, Choose from a range of Popular Brands{' '}
+      </h3>
+      <div className="pres-sun">
+        <h1 className="pers-header" id="pers-head-sun">
+          Need Sunglasses?
         </h1>
-        <h3 className="pers-desc" ref={persDRef}>
-          No matter the Budget, Choose from a range of Popular Brands{' '}
+        <h3 className="pers-desc" id="pers-desc-sun">
+          Turn Any Prescription frame into Sunglasses... no seriously{' '}
+          <button className="try-it-btn" onClick={handleClick}>
+            TRY IT
+          </button>
         </h3>
-        <div className="pres-sun">
-          <h1 className="pers-header" id="pers-head-sun">
-            Need Sunglasses?
-          </h1>
-          <h3 className="pers-desc" id="pers-desc-sun">
-            Turn Any Prescription frame into Sunglasses... no seriously{' '}
-            <button className="try-it-btn" onClick={handleClick}>
-              TRY IT
-            </button>
-              
-          </h3>
-        </div>
+      </div>
 
-        <div className="carousel-container">
-          <div className="carousel-inner">
-           
-            {logos.map((logo, index) => (
-              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Eyeware brand ${index + 1}`} />
-            ))}
-          </div>
-          <div className="carousel-inner">
-            {logos.map((logo, index) => (
-              <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Eyeware brand ${index + 1}`} />
-            ))}
-          </div>
+      <div className="carousel-container">
+        <div className="carousel-inner">
+          {logos.map((logo, index) => (
+            <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Eyeware brand ${index + 1}`} />
+          ))}
         </div>
-        <div className="pres-disc">
-          <h1 className="pers-header" id="pers-head-disc" ref={presHRef}>
-            Need A Discount?{' '}
-          </h1>
-          <h3 className="pers-desc" id="pers-desc-disc" ref={presDRef}>
-            Are you a Pensioner? Grab an eye test for only R400, and reading glasses from as low as R1000
-          </h3>
+        <div className="carousel-inner">
+          {logos.map((logo, index) => (
+            <img key={index} src={logo} className={`Logo-img ${index + 1}`} alt={`Eyeware brand ${index + 1}`} />
+          ))}
         </div>
-      </>
+      </div>
+      <div className="pres-disc">
+        <h1 className="pers-header" id="pers-head-disc" ref={useElementInView('#pers-head-disc')}>
+          Need A Discount?{' '}
+        </h1>
+        <h3 className="pers-desc" id="pers-desc-disc" ref={useElementInView('#pers-desc-disc')}>
+          Are you a Pensioner? Grab an eye test for only R400, and reading glasses from as low as R1000
+        </h3>
+      </div>
     </section>
   );
 };
 
 export default SpectacleCarousel;
+
+

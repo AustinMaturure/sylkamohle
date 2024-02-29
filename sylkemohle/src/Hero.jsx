@@ -31,13 +31,16 @@ function Hero() {
   const copyToClipboard = () => {
     setClicked(true)
     navigator.clipboard.writeText(phoneNumber)
+   
       .then(() => {
         console.log('Phone number copied to clipboard');
       })
       .catch((err) => {
         console.error('Unable to copy to clipboard', err);
-      });
+      }); 
+      window.location.href = 'tel:+27178263435';
     }
+ 
   
 
   return (
@@ -180,7 +183,7 @@ function Hero() {
         <address >
           <h1 className='cta-contact'>Make a Appointment with an Expert</h1>
           <div className="c-info">
-              <h3 className='call-contact' href="tel:+27178263435">(+27) 17 826 0308</h3>
+              <h3 className='call-contact' href="tel:+27178263435">(+27) 17 826 3435</h3>
           <h3 className='book-contact' onClick={copyToClipboard} style={{ cursor: 'pointer'}}>CALL TO BOOK <FontAwesomeIcon icon ={clicked ?  faClipboardCheck:faClipboard}className='btn-copy' style={{ marginLeft:'8px',transition:'all 1s', color:'rgb(255, 255, 255)' }}></FontAwesomeIcon> </h3>
           </div>
         

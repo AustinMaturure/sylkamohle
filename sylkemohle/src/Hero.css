@@ -644,7 +644,48 @@ transition: opacity 1.5s ease-in ;
   0% {transform: translateX(-4%);}
   100% {transform: translateX(0%);}
 }
+@media screen and (max-width: 826px){
+  .about-image{
+    display: none;
+  }
+  .hero{
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden !important;
+   
+    background-position: center;
+  }
+  .about-div, .footer, .foot-contact, .hero {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .about-text{
+    width: 100%;
+  }
+  .grid-1, .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    padding: 14px;
+  }
+  #contact-us {
+   height: auto;
+  }
 
+  .contact-text{
+    padding: 6px;
+    min-width: 160% !important;
+  }
+  .call-contact{
+    margin-left: 6px !important;
+  }
+  .logo-ctn, .foot-contact{
+    padding: 30px;
+   }
+  .foot-contact{
+    align-items: center !important;
+    justify-content: center;
+   }
+}
 @media screen and (max-width: 726px) {
   .about-div, .grid-1, .grid-2,.footer, .foot-contact, .hero {
     display: flex !important;
@@ -656,7 +697,16 @@ transition: opacity 1.5s ease-in ;
   .grid-1, .grid-2 {
     padding: 14px;
   }
-  
+  .spectacle-section{
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    background-position: center;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+   
+    
+  }
   .wwo-header, #wwo-about {
     padding-left: 20px;
     padding-bottom: 10px;

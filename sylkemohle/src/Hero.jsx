@@ -1,8 +1,6 @@
 
 import './Hero.css'
-
 import skyImage from '../assets/sky4.webp';
-
 import pexelsImage from '../assets/pexels-phot.webp';
 import contactImage from '../assets/pexels-photo-5715892.webp';
 

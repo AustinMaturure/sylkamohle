@@ -701,6 +701,8 @@ transition: opacity 1.5s ease-in ;
    }
   .c-info{
     padding: 6px;
+    align-items: center;
+    
   }
 
   
@@ -781,6 +783,15 @@ transition: opacity 1.5s ease-in ;
   .foot-contact{
     margin-left: 0px !important;
   }
+
+  .call-contact{
+    margin-left: 6px !important;
+  }
+
+  .book-contact{
+    font-size: 1rem;
+  }
+
 
 
 }

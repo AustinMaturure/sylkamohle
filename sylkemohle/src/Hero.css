@@ -826,6 +826,10 @@ transition: opacity 1.5s ease-in ;
     padding-left: 2px;
   }
 
+  .nav-links a{
+    text-wrap: nowrap;
+  }
+
   .about-image{
    display: none;
   }

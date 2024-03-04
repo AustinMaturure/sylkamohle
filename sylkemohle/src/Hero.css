@@ -516,6 +516,8 @@ transition: opacity 1.5s ease-in ;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
+  
+  -webkit-align-items: baseline;
   align-items: baseline;
   padding: 4px;
   margin-bottom: 40px;
@@ -816,6 +818,7 @@ transition: opacity 1.5s ease-in ;
   .hero{
     background-size: cover;
     background-repeat: no-repeat;
+    height: 100vh;
     overflow-x: hidden !important;
    
     background-position: center;

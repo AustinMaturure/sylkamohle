@@ -878,6 +878,16 @@ transition: opacity 1.5s ease-in ;
 
   .foot-contact{
     margin-left: 0px !important;
+    padding: 1rem;
+  }
+
+  .service-price{
+    width: 30%;
+  }
+
+  .opening-times{
+    width: 100%;
+    justify-content: space-around;
   }
 
   .call-contact{
@@ -888,7 +898,9 @@ transition: opacity 1.5s ease-in ;
     font-size: 1rem;
   }
 
-
+  .map{
+    padding: 1rem;
+  }
 
 }
 

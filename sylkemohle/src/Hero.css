@@ -694,6 +694,30 @@ transition: opacity 1.5s ease-in ;
     display: flex !important;
     flex-direction: column;
   }
+
+  .nav-links-mobile {
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    gap: 10px;
+    padding-left: 0px;
+    list-style: none;
+    transition: all 1s;
+
+  }
+
+  .nav-links-mobile a{
+    font-family: sans-serif;
+    color: #388AD2;
+    padding: 10px;
+    font-weight: 750;
+  }
+
+  .menu-toggle{
+    padding: 2px;
+    background-color: transparent;
+    filter: invert(100%);
+    border: 0px;
+  }
   .about-text{
     width: 100%;
     
@@ -734,6 +758,7 @@ transition: opacity 1.5s ease-in ;
    }
    .logo-header{
     font-size: 1.2rem;
+    align-self: center;
    }
 
    .navbar{

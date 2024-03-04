@@ -696,7 +696,7 @@ transition: opacity 1.5s ease-in ;
   }
   .about-text{
     width: 100%;
-    align-items: flex-start;
+    
   }
   .grid-1, .grid-2 {
     padding: 14px;

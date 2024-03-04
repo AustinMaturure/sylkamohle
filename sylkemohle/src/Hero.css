@@ -257,6 +257,7 @@ transition: opacity 1.5s ease-in ;
   padding: 50px;
   gap: 1.4rem;
   padding-top: 0px;
+  align-items: flex-end;
 }
 
 .service-title{
@@ -647,6 +648,10 @@ transition: opacity 1.5s ease-in ;
   0% {transform: translateX(-4%);}
   100% {transform: translateX(0%);}
 }
+
+.menu-toggle{
+  display: none;
+}
 @media screen and (max-width: 826px){
   .about-image{
     display: none;
@@ -717,6 +722,7 @@ transition: opacity 1.5s ease-in ;
   }
 
   .menu-toggle{
+    display: block;
     padding: 2px;
     background-color: transparent;
     filter: invert(100%);
@@ -778,10 +784,7 @@ transition: opacity 1.5s ease-in ;
       transform: translateX(100%);
     }
   }
-   .map{
-    padding-left: 90px;
-    padding-right: 90px;
-   }
+  
 
    .foot-contact{
     align-items: center !important;
@@ -1013,6 +1016,14 @@ transition: opacity 1.5s ease-in ;
 
   padding: 12px;
   border-radius: 12px;
+}
+
+.map{
+  width: 100%;
+}
+
+.map iframe{
+  max-width: 100%;
 }
 
 .legal{

@@ -702,6 +702,10 @@ transition: opacity 1.5s ease-in ;
     padding-left: 0px;
     list-style: none;
     transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 4px;
 
   }
 

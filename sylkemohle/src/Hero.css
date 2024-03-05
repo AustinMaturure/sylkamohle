@@ -729,7 +729,7 @@ transition: opacity 1.5s ease-in ;
     border: 0px;
   }
   .about-text{
-    width: 100%;
+    min-width: 100svw;
     
   }
   .grid-1, .grid-2 {
@@ -926,6 +926,7 @@ transition: opacity 1.5s ease-in ;
   display: flex;
   justify-content: flex-end;
   padding-right: 10px;
+  min-width: 100%;
 }
 .contact-image{
   

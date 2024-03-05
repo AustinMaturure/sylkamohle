@@ -36,6 +36,7 @@
       
       .nav-links, .nav-link{
         gap: 1px;
+        text-wrap: nowrap;
       }
 
       .logo-header{

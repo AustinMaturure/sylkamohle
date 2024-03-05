@@ -8,6 +8,7 @@ import serviceData from '../src/servicesData.json'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faMoneyBill } from '@fortawesome/free-solid-svg-icons';
+import Navbar from "./Navbar";
 
 
 

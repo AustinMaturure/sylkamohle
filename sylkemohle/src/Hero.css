@@ -729,7 +729,7 @@ transition: opacity 1.5s ease-in ;
     border: 0px;
   }
   .about-text{
-    min-width: 100svw;
+    min-width: 100%;
     
   }
   .grid-1, .grid-2 {
@@ -892,6 +892,7 @@ transition: opacity 1.5s ease-in ;
 
   .call-contact{
     margin-left: 6px !important;
+    text-wrap: nowrap;
   }
 
   .book-contact{

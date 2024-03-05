@@ -155,21 +155,28 @@ function Hero() {
           <h1 className='about-qa-head text-bubble left-triangle' ref={textBubbleRef}>
     Why do we love helping you see the things you love?
   </h1>
+  <div className="about-rep">
   <h3 className='about-qa-rep text-bubble right-triangle' >
     Our passion lies in enhancing your vision for a brighter, more enjoyable life. We take pride in helping you see the things you love, ensuring your journey is clear, comfortable, and plain for you to see
   </h3>
+  </div>
   <h1 className='about-qa-head text-bubble left-triangle'>
     Why choose us?
   </h1>
+  <div className="about-rep">
   <h3 className='about-qa-rep text-bubble right-triangle'>
   With 31 years of experience, our highly qualified optometrists bring expertise to every examination. We utilize advanced technology, ensuring accurate diagnoses and tailored solutions for your eye health
   </h3>
+  </div>
   <h1 className='about-qa-head text-bubble left-triangle'>
     What will you see the moment you check-in?
   </h1>
-  <h3 className='about-qa-rep text-bubble right-triangle'>
+  <div className="about-rep">
+    <h3 className='about-qa-rep text-bubble right-triangle'>
   Expect a warm and inviting atmosphere, with our friendly staff you'll experience a seamless process from check-in to your eye examination, with a focus on your comfort and well-being
   </h3>
+  </div>
+  
           </div>
           
 

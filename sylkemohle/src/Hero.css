@@ -922,6 +922,11 @@ transition: opacity 1.5s ease-in ;
  
   
 }
+.about-rep{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
 .contact-image{
   
   border-radius: 22px;

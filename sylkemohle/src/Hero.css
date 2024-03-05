@@ -897,6 +897,7 @@ transition: opacity 1.5s ease-in ;
 
   .book-contact{
     font-size: 1rem;
+    text-wrap: nowrap;
   }
 
   .map{

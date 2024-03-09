@@ -40,6 +40,19 @@ function Hero() {
       }); 
       window.location.href = 'tel:+27178263435';
     }
+    const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+  
  
   
 
@@ -113,8 +126,9 @@ function Hero() {
         but look great too.
     </p>
      <div className="arrow-cnt">
-   <div><p className='rd-mre'>read more</p>
-    </div><FontAwesomeIcon icon ={faArrowAltCircleRight}className='btn-arrow-up'></FontAwesomeIcon> </div>
+       <div>
+        <p className='rd-mre'>read more</p>
+       </div><FontAwesomeIcon icon ={faArrowAltCircleRight}className='btn-arrow-up'></FontAwesomeIcon> </div>
   </div>
   </Link>
  

@@ -40,6 +40,7 @@ function Hero() {
       }); 
       window.location.href = 'tel:+27178263435';
     }
+    if (window.innerWidth >= 866){
     const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
@@ -51,7 +52,7 @@ function raf(time) {
   requestAnimationFrame(raf)
 }
 
-requestAnimationFrame(raf)
+requestAnimationFrame(raf)}
   
  
   

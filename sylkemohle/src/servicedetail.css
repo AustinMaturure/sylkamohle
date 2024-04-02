@@ -58,7 +58,18 @@
 
     
   }
-  
+  #prescrip-nav{
+    position: relative;
+  }
+  #detail-links a{
+    color: #388AD2;
+  }
+  #service-menu img{
+    filter: hue-rotate(200deg) saturate(200%);
+    mix-blend-mode: color;
+    background-color: #388AD2;
+    border-radius: 22px;
+  }
   .service-descrption {
     padding: 20px;
     background-color: #213547e3;

@@ -124,7 +124,7 @@ requestAnimationFrame(raf)}
       Conducting eye exams to prescribe corrective lenses.
       Assisting in selecting eyeglass frames and fitting contact lenses.
       With our wide range of well-known brands we ensure you not only see great,
-        but look great too.
+      but look great too.
     </p>
      <div className="arrow-cnt">
        <div>

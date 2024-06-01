@@ -902,6 +902,7 @@ transition: opacity 1.5s ease-in ;
 
   .map{
     padding: 1rem;
+    box-sizing: border-box;
   }
 
 }

@@ -1,0 +1,40 @@
+.mobile-nav {
+  position: absolute;
+  z-index: 100;
+  height: 100svh;
+  width: 0%;
+  transform: translateX(100vw);
+  background-color: #388ad2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 1s ease-in-out;
+}
+
+.mobile-nav button {
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+
+.mobile-nav ul {
+  max-width: 100%;
+  padding: 0px;
+}
+.mobile-nav a {
+  color: #388ad2;
+  font-family: "Hind", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  transition: color 0.5s;
+}
+.mobile-nav.open {
+  width: 100%;
+  transform: translateX(0);
+}
+.mobile-nav.open a {
+  color: rgb(255, 255, 255);
+}
+.mobile-nav.open .menu-toggle img {
+  filter: invert(0);
+}

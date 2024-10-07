@@ -20,6 +20,7 @@
 .mobile-nav ul {
   max-width: 100%;
   padding: 0px;
+  overflow: hidden;
 }
 .mobile-nav a {
   color: #388ad2;

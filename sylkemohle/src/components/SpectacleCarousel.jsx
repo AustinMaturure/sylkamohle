@@ -14,7 +14,7 @@ import annaLogo from "../../assets/anna-hickmann.svg";
 import eyeSun from "../../assets/perscription-bg-img-lg.webp";
 import eyeMobile from "../../assets/no-sun-mobile.webp";
 import eyeSunMobile from "../../assets/sun-mobile.webp";
-import "../css/Hero.css";
+import "../css/hero.css";
 import useElementInView from "../utils/ElementInView";
 
 const logos = [

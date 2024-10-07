@@ -4,7 +4,7 @@ import "../css/servicedetail.css";
 import "../css/hero.css";
 import spec from "../../assets/eye-glasses.webp";
 import oct from "../../assets/oct.webp";
-import serviceData from "../servicesData.json";
+import serviceData from "./servicesData.json";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faMoneyBill } from "@fortawesome/free-solid-svg-icons";

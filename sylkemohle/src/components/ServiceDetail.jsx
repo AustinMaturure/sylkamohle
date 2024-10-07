@@ -50,67 +50,44 @@ export default function ServiceDetail() {
       {" "}
       <title>Optometrist Perscription Glasses and OCT exams Piet Retief</title>
       <div>
-        <div>
+        <div style={{ backgroundColor: "#388ad2" }}>
+          {" "}
+          {isMobile && (
+            <div className={`mobile-nav ${isOpen ? "open" : ""}`}>
+              {isMobile && (
+                <button className="menu-toggle" onClick={toggleMenu}>
+                  {isOpen ? (
+                    <img src={close} style={{ fill: "red" }} alt="Close Menu" />
+                  ) : (
+                    <img src={menu} alt="Open Menu" />
+                  )}
+                </button>
+              )}
+              <ul className="mobile-links">
+                <li>
+                  <a href="#services" onClick={toggleMenu}>
+                    Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#about-us" onClick={toggleMenu}>
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a href="#contact-us" onClick={toggleMenu}>
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          )}
           <nav className="navbar" id="prescrip-nav">
             <Link to="/">
               <h2 className="logo-header">
                 SYLKA MöHLE <p className="opt-p"> optometrist</p>
               </h2>
             </Link>
-
-            {isMobile && (
-              <button
-                className="menu-toggle"
-                id="service-menu"
-                onClick={toggleMenu}
-              >
-                {isOpen ? (
-                  <img src={close} alt="Close Menu" />
-                ) : (
-                  <img src={menu} alt="Open Menu" />
-                )}
-              </button>
-            )}
-
-            {isMobile && isOpen && (
-              <ul className="nav-links-mobile" id="detail-links">
-                <li>
-                  <Link to="/#services">
-                    <a href="#services" onClick={toggleMenu}>
-                      Services
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/#about-us">
-                    <a href="#about-us" onClick={toggleMenu}>
-                      About
-                    </a>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/#contact-us">
-                    <a href="#contact-us" onClick={toggleMenu}>
-                      Contact Us
-                    </a>
-                  </Link>
-                </li>
-              </ul>
-            )}
-
-            {!isMobile && (
-              <ul className="nav-links" id="detail-links">
-                <li>
-                  <Link to="/#services">Services</Link>
-                </li>
-                <li>
-                  <Link to="/#about-us">About</Link>
-                </li>
-                <li>
-                  <Link to="/#contact-us">Contact Us</Link>
-                </li>
-              </ul>
-            )}
           </nav>
         </div>
       </div>{" "}

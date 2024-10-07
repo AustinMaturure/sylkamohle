@@ -19,7 +19,7 @@ export default function Footer() {
         <div className="map">
           <iframe
             title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.795186415941!2d30.8049990743256!3d-27.00502797659228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eeee36162cfb003%3A0x47d4ca0ffcf50b32!2sMohle%20Sylka!5e0!3m2!1sen!2sza!4v1710676485306!5m2!1sen!2sza"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3554.775309671417!2d30.801239173872986!3d-27.005656597090763!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eeee5a9be8b9cb7%3A0xa277efcd410b0890!2sSykla%20M%C3%B6hle!5e0!3m2!1sen!2sza!4v1728311266452!5m2!1sen!2sza"
             width="400"
             height="200"
             className="map-frame"
@@ -31,17 +31,15 @@ export default function Footer() {
         </div>
         <div className="foot-contact">
           <h3 className="call-whatsapp">
-            {" "}
-            <FontAwesomeIcon icon={faPhone} className="clock-icon" />
-            (+27) 82 554 2925
+            <FontAwesomeIcon icon={faPhone} className="clock-icon" /> (+27) 82
+            554 2925
           </h3>
           <h3 className="foot-call-contact">
-            {" "}
-            <FontAwesomeIcon icon={faEnvelope} className="clock-icon" />
+            <FontAwesomeIcon icon={faEnvelope} className="clock-icon" />{" "}
             sylka@intekom.co.za
           </h3>
           <h3>
-            <FontAwesomeIcon icon={faLocation} className="clock-icon" />3 Alfa
+            <FontAwesomeIcon icon={faLocation} className="clock-icon" /> 3 Alfa
             Building, 11a Retief St Piet Retief
           </h3>
           <div className="opening-times">

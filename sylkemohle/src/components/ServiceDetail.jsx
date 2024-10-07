@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
-import "css/servicedetail.css";
+import "../css/servicedetail.css";
 import "../css/hero.css";
-import spec from "../assets/eye-glasses.webp";
-import oct from "../assets/oct.webp";
+import spec from "../../assets/eye-glasses.webp";
+import oct from "../../assets/oct.webp";
 import serviceData from "../servicesData.json";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faMoneyBill } from "@fortawesome/free-solid-svg-icons";
-import menu from "../assets/menu.svg";
-import close from "../assets/close.svg";
+import menu from "../../assets/menu.svg";
+import close from "../../assets/close.svg";
 
 export default function ServiceDetail() {
   useEffect(() => {

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
-import "../css/servicedetail.css";
-import "../css/Hero.css";
+import "css/servicedetail.css";
+import "../css/hero.css";
 import spec from "../assets/eye-glasses.webp";
 import oct from "../assets/oct.webp";
 import serviceData from "../servicesData.json";

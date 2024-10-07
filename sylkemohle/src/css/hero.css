@@ -862,7 +862,7 @@
   .book-contact {
     font-size: 1rem;
     text-wrap: nowrap;
-    margin-left: 0px;
+    margin-left: 0px !important;
   }
 
   .map {

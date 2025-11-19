@@ -120,8 +120,8 @@ const SpectacleCarousel = () => {
           Need A Discount?
         </h1>
         <h3 className="pers-desc" id="pers-desc-disc" ref={presDRef}>
-          Are you a Pensioner? Grab an eye test for only R400, and reading
-          glasses from as low as R1000
+          Are you a Pensioner? Grab an eye test for only R450, and reading
+          glasses from as low as R1400
         </h3>
       </div>
     </section>

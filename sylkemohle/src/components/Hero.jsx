@@ -2,6 +2,7 @@ import "../css/hero.css";
 import skyImage from "../../assets/sky4.webp";
 import pexelsImage from "../../assets/pexels-phot.webp";
 import contactImage from "../../assets/pexels-photo-5715892.webp";
+import wa from "../../assets/wa.webp"
 
 import SpectacleCarousel from "./SpectacleCarousel";
 
@@ -62,6 +63,7 @@ function Hero() {
       <Navbar></Navbar>
 
       <section className="hero" style={{ backgroundImage: `url(${skyImage})` }}>
+     
         <div className="hero-title">
           {" "}
           <h1 className="tag-line">YOUR VISION, OUR EXPERTISE</h1>
@@ -71,6 +73,10 @@ function Hero() {
         </div>
       </section>
       <section className="offer">
+      <div>
+          <a href="https://api.whatsapp.com/send?phone=27603252021" className="wa-link"  target="_blank"
+  rel="noopener noreferrer"><img class="wa-img" src={wa} alt="" /></a>
+        </div>
         <div className="offer-content" id="services">
           <h1 className="wwo-header" ref={HeaderRef}>
             OUR SERVICES
@@ -81,13 +87,14 @@ function Hero() {
               className="service-link"
             >
               <div className="service-card" id="card-1">
+                <div>
                 <h2 className="service-title">Comprehensive OCT Exams</h2>
-                <p className="service-price">R599.00</p>
+                <p className="service-price">R635.00</p>
                 <p className="service-description">
                   Assessing visual acuity (clarity of vision). Checking for
                   refractive errors (nearsightedness, farsightedness,
                   astigmatism). Determining eye health and overall well-being.
-                </p>
+                </p></div>
                 <div className="arrow-cnt">
                   <div>
                     <p className="rd-mre">read more</p>
@@ -100,7 +107,7 @@ function Hero() {
               </div>
             </Link>
 
-            <div className="service-card" id="card-2">
+            <div className="service-card flat" id="card-2">
               <h2 className="service-title" style={{ marginBottom: "0px" }}>
                 Contact Lenses
               </h2>
@@ -114,7 +121,7 @@ function Hero() {
                 className="price-container"
               >
                 <p>from</p>
-                <p className="service-price">R450.00</p>
+                <p className="service-price">R635.00</p>
               </div>
               <p className="service-description" style={{ marginTop: "0px" }}>
                 Looking for a more discreet look? We provide contact lenses in a
@@ -123,9 +130,20 @@ function Hero() {
               </p>
             </div>
 
-            <div className="service-card" id="card-3">
-              <h2 className="service-title">Dilated Eye Exam</h2>
-              <p className="service-price">R200.00</p>
+            <div className="service-card flat" id="card-3">
+              <h2 className="service-title" style={{ marginBottom: "0px" }}>Dilated Eye Exam</h2>
+              <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "10px",
+                    padding: "0px",
+                  }}
+                  className="price-container"
+                >
+                  <p>from</p>
+                  <p className="service-price">R200.00</p>
+                </div>
               <p className="service-description">
                 Providing Dilated eye exams as well as Cataract Screening .
                 Addressing issues such as eye coordination and focusing
@@ -153,7 +171,7 @@ function Hero() {
                   className="price-container"
                 >
                   <p>from</p>
-                  <p className="service-price">R1 300.00</p>
+                  <p className="service-price">R1 400.00</p>
                 </div>
                 <p className="service-description" style={{ marginTop: "0px" }}>
                   Conducting eye exams to prescribe corrective lenses. Assisting
@@ -173,7 +191,7 @@ function Hero() {
               </div>
             </Link>
 
-            <div className="service-card" id="card-5">
+            <div className="service-card flat" id="card-5">
               <h2 className="service-title" style={{ marginBottom: "0px" }}>
                 Perscription Sunglasses
               </h2>
@@ -187,7 +205,7 @@ function Hero() {
                 className="price-container"
               >
                 <p>from</p>
-                <p className="service-price">R1 300.00</p>
+                <p className="service-price">R1 400.00</p>
               </div>
               <p className="service-description" style={{ marginTop: "0px" }}>
                 Choose from a variety of polarized/sunglass brands, or turn Your
@@ -196,7 +214,7 @@ function Hero() {
               </p>
             </div>
 
-            <div className="service-card" id="card-6">
+            <div className="service-card flat" id="card-6">
               <h2 className="service-title">Driver's Test</h2>
               <p className="service-price">R50.00</p>
               <p className="service-description">
@@ -242,8 +260,8 @@ function Hero() {
               </h1>
               <div className="about-rep">
                 <h3 className="about-qa-rep text-bubble right-triangle">
-                  With 31 years of experience, our highly qualified optometrists
-                  bring expertise to every examination. We utilize advanced
+                  With 31 years of experience, our highly qualified optometrist
+                  brings expertise to every examination. We utilize advanced
                   technology, ensuring accurate diagnoses and tailored solutions
                   for your eye health
                 </h3>

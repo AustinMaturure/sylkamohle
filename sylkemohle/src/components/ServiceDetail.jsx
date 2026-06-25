@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faMoneyBill } from "@fortawesome/free-solid-svg-icons";
 import menu from "../../assets/menu.svg";
 import close from "../../assets/close.svg";
+import PageSEO from "./PageSEO";
 
 export default function ServiceDetail() {
   useEffect(() => {
@@ -22,9 +23,6 @@ export default function ServiceDetail() {
     (service) => service.slug == serviceSlug
   );
 
-  if (!service) {
-    return <div>Service not found</div>;
-  }
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -45,10 +43,32 @@ export default function ServiceDetail() {
     };
   }, []);
 
+  if (!service) {
+    return (
+      <>
+        <PageSEO
+          title="Service Not Found | Sylka Möhle Optometrist"
+          description="The requested eye care service could not be found. Browse our optometry services in Piet Retief."
+          path={`/services/${serviceSlug}`}
+        />
+        <div>Service not found</div>
+      </>
+    );
+  }
+
+  const imageAlt =
+    serviceSlug === "prescription-eyeglasses"
+      ? "Prescription eyeglasses and frames at Sylka Möhle Optometrist Piet Retief"
+      : "Comprehensive OCT eye exam at Sylka Möhle Optometrist Piet Retief";
+
   return (
     <>
-      {" "}
-      <title>Optometrist Perscription Glasses and OCT exams Piet Retief</title>
+      <PageSEO
+        title={service.seoTitle || `${service.title} | Sylka Möhle Optometrist`}
+        description={service.seoDescription || service.description.join(" ")}
+        path={`/services/${service.slug}`}
+        service={service}
+      />
       <div>
         <div style={{ backgroundColor: "#388ad2" }}>
           {" "}
@@ -65,19 +85,19 @@ export default function ServiceDetail() {
               )}
               <ul className="mobile-links">
                 <li>
-                  <a href="#services" onClick={toggleMenu}>
+                  <Link to="/#services" onClick={toggleMenu}>
                     Services
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#about-us" onClick={toggleMenu}>
+                  <Link to="/#about-us" onClick={toggleMenu}>
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#contact-us" onClick={toggleMenu}>
+                  <Link to="/#contact-us" onClick={toggleMenu}>
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -91,12 +111,11 @@ export default function ServiceDetail() {
           </nav>
         </div>
       </div>{" "}
-      {console.log(serviceData.services)}
       <div className="service-detail-cnt">
         <div className="service-illustration">
           <img
             src={serviceSlug == "prescription-eyeglasses" ? spec : oct}
-            alt="perscription-eyeglasses-piet-retief"
+            alt={imageAlt}
             style={{ maxWidth: "100%" }}
             className="serv-pic"
             loading="lazy"

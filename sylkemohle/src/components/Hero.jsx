@@ -11,6 +11,7 @@ import useElementInView from "../utils/ElementInView";
 
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
+import PageSEO from "./PageSEO";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowAltCircleRight,
@@ -60,6 +61,7 @@ function Hero() {
 
   return (
     <>
+      <PageSEO includeLocalBusiness />
       <Navbar></Navbar>
 
       <section className="hero" style={{ backgroundImage: `url(${skyImage})` }}>
@@ -75,12 +77,12 @@ function Hero() {
       <section className="offer">
       <div>
           <a href="https://api.whatsapp.com/send?phone=27603252021" className="wa-link"  target="_blank"
-  rel="noopener noreferrer"><img class="wa-img" src={wa} alt="" /></a>
+  rel="noopener noreferrer"><img className="wa-img" src={wa} alt="Contact Sylka Möhle Optometrist on WhatsApp" /></a>
         </div>
         <div className="offer-content" id="services">
-          <h1 className="wwo-header" ref={HeaderRef}>
+          <h2 className="wwo-header" ref={HeaderRef}>
             OUR SERVICES
-          </h1>
+          </h2>
           <div className="grid-1" ref={serviceCardRef}>
             <Link
               to={`/services/comprehensive-oct-eye-exams`}
@@ -226,9 +228,9 @@ function Hero() {
         </div>
 
         <section className="about-section" id="about-us">
-          <h1 className="wwo-about" id="wwo-about" ref={HeaderARef}>
+          <h2 className="wwo-about" id="wwo-about" ref={HeaderARef}>
             ABOUT US
-          </h1>
+          </h2>
           <div className="about-div">
             <div
               className="about-image"
@@ -237,16 +239,17 @@ function Hero() {
               <img
                 src={pexelsImage}
                 loading="lazy"
+                alt="Sylka Möhle optometrist practice in Piet Retief"
                 style={{ maxHeight: "100%", maxWidth: "100%" }}
               />
             </div>
             <div className="about-text">
-              <h1
+              <h2
                 className="about-qa-head text-bubble left-triangle"
                 ref={textBubbleRef}
               >
                 Why do we love helping you see the things you love?
-              </h1>
+              </h2>
               <div className="about-rep">
                 <h3 className="about-qa-rep text-bubble right-triangle">
                   Our passion lies in enhancing your vision for a brighter, more
@@ -255,9 +258,9 @@ function Hero() {
                   plain for you to see
                 </h3>
               </div>
-              <h1 className="about-qa-head text-bubble left-triangle">
+              <h2 className="about-qa-head text-bubble left-triangle">
                 Why choose us?
-              </h1>
+              </h2>
               <div className="about-rep">
                 <h3 className="about-qa-rep text-bubble right-triangle">
                   With 31 years of experience, our highly qualified optometrist
@@ -266,9 +269,9 @@ function Hero() {
                   for your eye health
                 </h3>
               </div>
-              <h1 className="about-qa-head text-bubble left-triangle">
+              <h2 className="about-qa-head text-bubble left-triangle">
                 What will you see the moment you check-in?
-              </h1>
+              </h2>
               <div className="about-rep">
                 <h3 className="about-qa-rep text-bubble right-triangle">
                   Expect a warm and inviting atmosphere, with our friendly staff
@@ -285,7 +288,7 @@ function Hero() {
         <section className="contact-us" id="contact-us" ref={contactImageRef}>
           <div className="contact-text" ref={contactRef}>
             <address>
-              <h1 className="cta-contact">Make a Appointment with an Expert</h1>
+              <h2 className="cta-contact">Make a Appointment with an Expert</h2>
               <div className="c-info">
                 <h3 className="call-contact" href="tel:+27178263435">
                   (+27) 17 826 3435
